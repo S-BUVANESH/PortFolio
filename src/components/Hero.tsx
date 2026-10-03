@@ -34,7 +34,7 @@ export default function Hero({ live }: { live: boolean }) {
           transition={{ duration: 1.2, ease: draw, delay: 0.35 }}
         >
           <img
-            src="/assets/me.jpeg"
+            src="./assets/me.jpeg"
             alt="Portrait of Buvanesh S."
             className="h-full w-full object-cover object-[50%_22%] brightness-[1.04] contrast-[1.06] saturate-[0.95]"
             style={{ maskImage: 'linear-gradient(180deg, #000 72%, transparent 100%)', WebkitMaskImage: 'linear-gradient(180deg, #000 72%, transparent 100%)' }}

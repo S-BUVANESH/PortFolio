@@ -4,7 +4,7 @@ export const contact = {
   phoneHref: 'tel:+916379345945',
   linkedin: 'https://linkedin.com/in/buvanesh-s-39113632a',
   github: 'https://github.com/S-BUVANESH',
-  cv: '/assets/cv.pdf',
+  cv: './assets/cv.pdf',
 }
 
 export const education = {

@@ -58,13 +58,13 @@ export default function Seals() {
             <span className="font-display text-2xl">Infosys Springboard</span><Mono className="text-mist">08</Mono>
           </div>
           <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
-            {infosys.map(([t, f], i) => <Seal key={f} title={t} issuer="Infosys" href={`/certs/${f}.pdf`} i={i} />)}
+            {infosys.map(([t, f], i) => <Seal key={f} title={t} issuer="Infosys" href={`./certs/${f}.pdf`} i={i} />)}
           </div>
           <div className="mt-14 flex items-baseline justify-between border-b border-washi/10 pb-3">
             <span className="font-display text-2xl">HackerRank</span><Mono className="text-mist">04</Mono>
           </div>
           <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
-            {hackerrank.map(([t, f], i) => <Seal key={f} title={`${t} Certificate`} issuer="HackerRank" href={`/certs/${f}.pdf`} i={i} />)}
+            {hackerrank.map(([t, f], i) => <Seal key={f} title={`${t} Certificate`} issuer="HackerRank" href={`./certs/${f}.pdf`} i={i} />)}
           </div>
         </div>
       </div>
