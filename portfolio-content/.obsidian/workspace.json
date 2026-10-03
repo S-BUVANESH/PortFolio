@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "f3206d6e9de0362c",
+    "type": "split",
+    "children": [
+      {
+        "id": "40a3123bd0aecb6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "158e14fcb46110ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week_06/01_Monday/laser_cutting_week06_monday.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "laser_cutting_week06_monday"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8f14db5ea8a57b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "df9782a9f4daea6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b7c6c0e5244a223",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2b233739801fa3ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f4468c5fcb095abe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "11de12b50cf75818",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0a584163c7eb153",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad497815b86e5b6e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Week_00/03_Wednesday/Day_03_Goodbye_CSE_Bubble_Hello_New_Squad_The_41cm_Tower.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "4cd9869bc401be7a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Week_00/03_Wednesday/Day_03_Goodbye_CSE_Bubble_Hello_New_Squad_The_41cm_Tower.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "30794066993795f9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7ae9c204e2802e86",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "101a7beec1ff1ebf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Week_11/02_Tuesday/jkfmnsfsuidjiuj.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "adc4dc99c1ab541e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "158e14fcb46110ee",
+  "lastOpenFiles": [
+    "Week_06/01_Monday/Arthur White.jpeg",
+    "Week_06/01_Monday/ARTHUR SWartz.jpeg",
+    "Week_06/02_Tuesday/3d_printing_week06_tuesday.md",
+    "Week_06/02_Tuesday/Buvanesh.glb",
+    "Week_00/02_Tuesday/Day_02_Knowing_Yourself_Is_One_Thing_Pitching_Yourself_Is_Another.md",
+    "Week_06/01_Monday/3d_printing_week06_tuesday.md",
+    "Week_06/01_Monday/laser_cutting_week06_monday.md",
+    "Week_06/02_Tuesday/Weekly_Portfolio_Update_3D_Printing (1).md",
+    "Week_06/01_Monday/Weekly_Portfolio_Update_Laser_Cutting.md",
+    "Week_06/01_Monday/Weekly_Portfolio_Update_3D_Printing (1).md",
+    "Week_00/01_Monday/Week_00_Field_Notes.md",
+    "Week_11/02_Tuesday/jkfmnsfsuidjiuj.md",
+    "Week_01/02_Tuesday/4714774605908547 2.jpg",
+    "Week_01/02_Tuesday/4714774605908547 3.jpg",
+    "Week_01/02_Tuesday/Git_Test.md.md",
+    "Week_02/01_Monday/Git_Test.md 1.md",
+    "Week_02/01_Monday/4714774605908547 1.jpg",
+    "Week_00/01_Monday/07-pafe-framework.jpg",
+    "Week_01/02_Tuesday/4714774605908547.jpg",
+    "Week_00/03_Wednesday/Day_03_Goodbye_CSE_Bubble_Hello_New_Squad_The_41cm_Tower.md",
+    "Week_00/03_Wednesday/EVOLUTION OF RETAIL INDUSTRY part4.png",
+    "Week_00/01_Monday/Day_01_Enter_the_Room_as_Strangers.md",
+    "Week_00/01_Monday/01-founder-started-somewhere.jpg",
+    "README.md"
+  ]
+}

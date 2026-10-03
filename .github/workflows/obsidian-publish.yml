@@ -1,0 +1,39 @@
+name: Obsidian Portfolio Auto-Publish
+
+on:
+  push:
+    paths:
+      - 'portfolio-content/**'
+      - 'scripts/build-templates.js'
+      - '.github/workflows/obsidian-publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate standalone weekly dossiers
+        run: node scripts/build-templates.js
+
+      - name: Commit generated pages
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: auto-publish Obsidian weekly dossiers"
+          file_pattern: "Blogs/** src/generated/archive.ts public/archive/**"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"

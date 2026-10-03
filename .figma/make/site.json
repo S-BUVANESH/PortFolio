@@ -1,0 +1,11 @@
+{
+  "title": "Buvanesh S. — Computer Science · Artificial Intelligence · Design",
+  "description": "Buvanesh S. — Computer Science & Engineering student exploring Artificial Intelligence, Machine Learning, intelligent systems, coding, and design.",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
