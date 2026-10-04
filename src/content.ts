@@ -4,7 +4,7 @@ export const contact = {
   phoneHref: 'tel:+916379345945',
   linkedin: 'https://linkedin.com/in/buvanesh-s-39113632a',
   github: 'https://github.com/S-BUVANESH',
-  cv: './assets/cv.pdf',
+  cv: `${import.meta.env.BASE_URL}assets/cv.pdf`,
 }
 
 export const education = {
@@ -94,20 +94,27 @@ export const projects: Project[] = [
 
 
 export type Skill = { name: string; logo?: string; glyph?: string; kind: 'Language' | 'Web' | 'AI' | 'Foundation' | 'Library' | 'Craft' }
-export const skills: Skill[] = [
-  { name: 'Python', logo: '/logos/python-original.svg', kind: 'Language' },
-  { name: 'C / C++', logo: '/logos/cplusplus-original.svg', kind: 'Language' },
-  { name: 'Java', logo: '/logos/java-original.svg', kind: 'Language' },
-  { name: 'SQL', glyph: 'sql', kind: 'Language' },
-  { name: 'HTML', logo: '/logos/html5-original.svg', kind: 'Web' },
-  { name: 'CSS', logo: '/logos/css3-original.svg', kind: 'Web' },
-  { name: 'Machine Learning', glyph: 'ml', kind: 'AI' },
-  { name: 'Artificial Intelligence', glyph: 'ai', kind: 'AI' },
-  { name: 'Prompt Engineering', glyph: 'prompt', kind: 'AI' },
-  { name: 'NumPy', logo: '/logos/numpy-original.svg', kind: 'Library' },
-  { name: 'Data Structures & Algorithms', glyph: 'dsa', kind: 'Foundation' },
-  { name: '3D Designing', glyph: '3d', kind: 'Craft' },
-]
+
+function base() { return import.meta.env.BASE_URL }
+
+export function makeSkills(): Skill[] {
+  const b = base()
+  return [
+    { name: 'Python', logo: `${b}logos/python-original.svg`, kind: 'Language' },
+    { name: 'C / C++', logo: `${b}logos/cplusplus-original.svg`, kind: 'Language' },
+    { name: 'Java', logo: `${b}logos/java-original.svg`, kind: 'Language' },
+    { name: 'SQL', glyph: 'sql', kind: 'Language' },
+    { name: 'HTML', logo: `${b}logos/html5-original.svg`, kind: 'Web' },
+    { name: 'CSS', logo: `${b}logos/css3-original.svg`, kind: 'Web' },
+    { name: 'Machine Learning', glyph: 'ml', kind: 'AI' },
+    { name: 'Artificial Intelligence', glyph: 'ai', kind: 'AI' },
+    { name: 'Prompt Engineering', glyph: 'prompt', kind: 'AI' },
+    { name: 'NumPy', logo: `${b}logos/numpy-original.svg`, kind: 'Library' },
+    { name: 'Data Structures & Algorithms', glyph: 'dsa', kind: 'Foundation' },
+    { name: '3D Designing', glyph: '3d', kind: 'Craft' },
+  ]
+}
+export const skills = makeSkills()
 
 export const infosys: [string, string][] = [
   ['Artificial Intelligence Primer', 'ai-primer'],
