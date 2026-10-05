@@ -138,7 +138,7 @@ export const archiveWeeks = [
     "n": 6,
     "sourceWeek": "Week_06",
     "title": "From Screen to Acrylic: Cutting Arthur Morgan",
-    "summary": "A two-day digital fabrication study spanning laser cutting in acrylic and FDM 3D printing, from image-to-DXF preparation to a printed Batman model.",
+    "summary": "A digital fabrication study using FDM 3D printing on the Bambu Lab H2S, detailing slicer preparation, material settings, and the additive manufacturing process.",
     "date": "2026-09-29",
     "status": "published",
     "tags": [
@@ -164,12 +164,12 @@ export const archiveWeeks = [
       }
     ],
     "previewImages": [
-      "/archive/weekly/Week_06/01_Monday/Laser%20Cutter%20Safety%20Rules.png",
-      "/archive/weekly/Week_06/01_Monday/Laser%20Cutter%20Machine%20Details.png",
-      "/archive/weekly/Week_06/01_Monday/Arthur%20Morgan%20Selected%20Design.png",
-      "/archive/weekly/Week_06/01_Monday/Arthur%20Morgan%20Vector%20Conversion.png"
+      "/archive/weekly/Week_06/01_Monday/01_laser_safety_rules.png",
+      "/archive/weekly/Week_06/01_Monday/02_laser_machine_details.png",
+      "/archive/weekly/Week_06/01_Monday/04_gemini_arthur_reference.png",
+      "/archive/weekly/Week_06/01_Monday/03_selected_arthur_design.png"
     ],
-    "imageCount": 10,
+    "imageCount": 14,
     "hasContent": true,
     "url": "Blogs/Week_06.html"
   },

@@ -1,20 +1,16 @@
 ---
 title: "From Screen to Acrylic: Cutting Arthur Morgan"
+week_title: "Week 06 — Digital Fabrication & 3D Printing"
 week: 6
 day: "01"
 date: "2026-09-28"
 summary: "Turning a 50 × 50 mm Arthur Morgan graphic into two acrylic laser-cut results through AI-assisted image preparation, vector cleanup, Illustrator repair, and RDWorks."
 tags: ["laser cutting", "digital fabrication", "RDWorks", "CO2 laser", "acrylic"]
 preview_images:
-  - "Arthur White.jpeg"
-  - "ARTHUR SWartz.jpeg"
-  - "RDWorks Final Layout.png"
-  - "RDWorks Scan Preview.png"
-preview_captions:
-  - "Final transparent acrylic result"
-  - "Early black acrylic result"
-  - "RDWorks final vector layout"
-  - "RDWorks scan preview"
+  - "11_transparent_acrylic_result.jpeg"
+  - "10_black_acrylic_result.jpeg"
+  - "05_rdworks_vector_layout.png"
+  - "09_laser_cutting_closeup.png"
 ---
 
 # From Screen to Acrylic: Cutting Arthur Morgan
@@ -29,20 +25,25 @@ The decision was also influenced by the environment around the project. Some of 
 
 Laser cutting combines concentrated heat, moving machinery, smoke generation, and electrical equipment. Before operating the machine, I followed the safety guidance displayed in the FORGE fabrication area.
 
-The main precautions were:
+The main precautions observed from the safety board were:
 
-| Safety area | Practice followed |
-|---|---|
-| Laser safety | Used the enclosed machine as intended and kept the machine door closed during operation. |
-| Exhaust system | Kept the exhaust / ventilation system operating to remove smoke and fumes. |
-| Chiller | Ensured the cooling system was operating before running the laser. |
-| Earthing | Followed the lab's electrical safety and earthing requirements before operation. |
-| Air assist | Used the machine's air-assist / blowing system during processing. |
-| General machine safety | Checked the working area, confirmed the selected material was permitted, and did not leave the cutter unattended. |
+- Wear safety goggles and gloves
+- Improper settings may result in fire
+- Improper materials may create toxic fumes
+- Operate with proper setting
+- Switch on blower and chiller while running
+- Close the machine door while running
+- Report missing tools/supplies and material damage
+- Clean up after use
+- Ask a technician when needed
+- Do not use unauthorized materials
+- Do not switch off directly while the machine is running
+- Do not use the laser cutter in a way that can hurt anyone
+- Do not leave the laser cutter unattended
 
 The lab safety notice also distinguishes authorised materials from banned materials. I used acrylic, which is listed as an authorised material in the displayed FORGE guidance.
 
-![[Laser Cutter Safety Rules.png]]
+![[01_laser_safety_rules.png]]
 *Caption: FORGE laser-cutter safety notice showing safety precautions, operating do's and don'ts, authorised materials, and banned materials.*
 
 ## 2. Machine Details
@@ -51,22 +52,18 @@ The machine used for the exercise was the **1490 CO₂ laser cutter in the FORGE
 
 | Specification | Observed / documented value |
 |---|---|
-| Make / Manufacturer | Not identified on the supplied machine placard |
-| Model | 1490 CO₂ Laser |
-| Working / Bed Area | 1300 × 900 mm |
-| Laser Tube / Laser Power | 150 W |
-| Control Software | RDWorks V8 |
+| Model | 1490 CO2 laser |
+| Working Area | 1300 × 900 mm |
+| Laser Power | 150 W |
 | Machine Power | 1000 W |
-| Listed Cutting Speed Capability | 25 m/min |
-| Listed Engraving Speed Capability | 55 m/min |
-| Listed Accuracy | 0.1 mm |
-| Working Temperature | 0 °C – 40 °C |
-| Blowing System | Lower blowing system |
-| Listed Materials | Acrylic, plywood, MDF, foam board, cardboard, paper |
+| Accuracy | 0.1 mm |
+| Working Temperature | 0 °C–40 °C |
+| Blowing System | Lower Blowing System |
+| Applicable Materials | Acrylic, Plywood, MDF, Foam Board, Cardboard, Paper |
+| Control Software | RDWorks V8 |
+| Manufacturer | Not identified on the supplied placard |
 
-The manufacturer name is not visible on the supplied placard, so I have not assigned a manufacturer based on a similar commercial machine. The machine identification above is based on the information physically displayed on the FORGE lab machine.
-
-![[Laser Cutter Machine Details.png]]
+![[02_laser_machine_details.png]]
 *Caption: Machine specification placard for the 1490 CO₂ laser cutter used in the fabrication lab.*
 
 ## 3. Materials Used
@@ -86,8 +83,8 @@ I chose the subject because I wanted a design that had recognisable character, v
 
 The target size was **50 × 50 mm**, so the image had to remain readable after being simplified for fabrication.
 
-![[Arthur Morgan Selected Design.png]]
-*Caption: Arthur Morgan reference artwork selected as the starting point for the 50 × 50 mm fabrication design.*
+![[04_gemini_arthur_reference.png]]
+*Caption: Initial Arthur Morgan concept generated via Gemini at the requested 50 × 50 mm design scale.*
 
 ## 5. Image-to-DXF Conversion
 
@@ -97,40 +94,16 @@ The tools involved were:
 
 **Gemini** — used to generate a 50 × 50 mm concept image.
 
-**ChatGPT** — used to simplify the image into a high-contrast, line-based representation suitable for vectorisation / DXF preparation.
+**ChatGPT** — used to adapt the image toward a monochrome / stroke-oriented design suitable for DXF/vector processing.
 
-**CloudConvert** — used during the file-format conversion stage.
+**CloudConvert** — used in the image-to-DXF workflow.
 
-**Adobe Illustrator** — used to repair and refine the vector geometry before machine preparation.
+**Adobe Illustrator** — used for vector cleanup and patching open edges.
 
-The workflow was:
+**RDWorks V8** — used for machine-job preparation.
 
-```text
-Theme selection
-      ↓
-Red Dead Redemption 2 / Arthur Morgan
-      ↓
-50 × 50 mm concept image
-      ↓
-AI-assisted simplification
-      ↓
-Single-colour / line-based artwork
-      ↓
-Vector / DXF conversion
-      ↓
-Adobe Illustrator cleanup
-      ↓
-RDWorks V8
-      ↓
-Scan + Cut setup
-      ↓
-CO₂ laser fabrication
-```
-
-![[Arthur Morgan Vector Conversion.png]]
-*Caption: Simplified single-colour line artwork prepared for vector-based fabrication.*
-
-The important design decision was eliminating unnecessary colour information and retaining the visual structure as strokes and boundaries that a laser workflow could interpret.
+![[03_selected_arthur_design.png]]
+*Caption: Simplified monochrome Arthur design prepared for vector-based fabrication.*
 
 ## 6. File Preparation
 
@@ -143,13 +116,10 @@ The main preparation work was:
 | Vector cleaning | Removed or corrected geometry that could interfere with the final result. |
 | Scaling | Prepared the design around the intended 50 × 50 mm size. |
 | Closed paths | Repaired open edges so the cutting boundary could be interpreted correctly. |
-| Unwanted / duplicate geometry | Cleaned unnecessary vector elements before machine setup. |
+| Unwanted geometry | Cleaned unnecessary vector elements before machine setup. |
 | Final verification | Inspected the vector again in Illustrator before importing it into RDWorks. |
 
-The most important repair involved **open edges**. An open edge can change how a machine interprets a boundary, so I patched those areas in Adobe Illustrator before the final run.
-
-![[Arthur Morgan Vector Conversion.png]]
-*Caption: Vector preparation stage after simplifying the original image into line-based geometry.*
+The most important repair involved **open edges**. An open edge can change how a machine interprets a boundary. The black acrylic version was cut before all corrections were complete, resulting in an open-edge issue around the mouth. I patched those areas in Adobe Illustrator for the transparent version.
 
 ## 7. Nesting & Layout in RDWorks
 
@@ -159,29 +129,28 @@ The working layer assignment was:
 
 | RDWorks layer colour | Operation |
 |---|---|
-| Red | Cut |
-| Blue | Scan / engraving |
+| Black | Cut |
+| Blue | Scan |
 
-The layout was prepared so the vector artwork could produce both a surface-detail layer and an outer physical boundary.
+The layout was prepared so the vector artwork could produce both a surface-detail layer (scan) and an outer physical boundary (cut).
 
-![[RDWorks Final Layout.png]]
+![[05_rdworks_vector_layout.png]]
 *Caption: Final RDWorks layout showing the vector artwork and colour-coded processing paths.*
 
-![[RDWorks Scan Preview.png]]
+![[06_rdworks_scan_preview.png]]
 *Caption: RDWorks preview of the line-based scan / engraving geometry before fabrication.*
 
 ## 8. Final Machine Settings
 
-I am recording the settings that can be recovered from the actual session evidence and my notes. Values that were not preserved in the supplied records are explicitly marked rather than guessed.
+The settings used during the session are explicitly drawn from the exact RDWorks machine preparation parameters:
 
 | Material | Thickness | Operation | Speed | Minimum Power | Maximum Power | Passes | Frequency |
 |---|---:|---|---:|---:|---:|---:|---:|
-| Acrylic | 2 mm | Cut — Red | ≈100 mm/s* | Not recorded | Not recorded | Not recorded | Not recorded |
-| Acrylic | 2 mm | Scan — Blue | ≈100 mm/s* | Not recorded | Not recorded | Not recorded | Not recorded |
+| Acrylic | 2.00 mm | Cut (Perimeter) | 100.00 mm/s | 30.0% | 30.0% | 1 | 20,000 Hz |
+| Acrylic | 2.00 mm | Scan (Engrave) | 100.00 mm/s | 30.0% | 30.0% | 1 | 20,000 Hz |
 
-* The working speed of approximately **100 mm/s** is a recalled session value; the original RDWorks layer-specific numeric entry was not preserved in the available evidence.
-
-The machine placard lists significantly higher **maximum machine capabilities** of 25 m/min cutting and 55 m/min engraving, but those figures are machine specifications and are not being presented here as the actual settings used for this 2 mm acrylic job.
+![[07_actual_laser_settings.png]]
+*Caption: Actual laser settings showing 100.00 mm/s speed and 30% power for both scan and cut operations.*
 
 ## 9. Cutting Process
 
@@ -194,13 +163,11 @@ The physical process involved:
 5. Running the cut layer.
 6. Checking the resulting acrylic piece.
 
-![[Laser Cutter Machine Details.png]]
-*Caption: Laser-cutter identification and working-area information at the fabrication station.*
+![[08_laser_machine_process.png]]
+*Caption: Observing the 1490 CO₂ laser cutter during operation in the FORGE lab.*
 
-![[RDWorks Final Layout.png]]
-*Caption: Prepared RDWorks job before the laser fabrication step.*
-
-> **Process evidence to be added:** A direct photograph of the laser actively cutting the acrylic was not included in the supplied media bundle. Add the actual cutting-process photograph here before final faculty submission, with a descriptive caption.
+![[09_laser_cutting_closeup.png]]
+*Caption: Direct closeup of the laser actively processing the acrylic surface.*
 
 ## 10. Final Result – Hero Shot
 
@@ -208,15 +175,15 @@ I produced two physical variants from the same digital geometry.
 
 | Variant | Material | Observation |
 |---|---|---|
-| 01 | Black acrylic | Early result; the open-edge issue caused an unwanted / odd mouth detail. |
-| 02 | Transparent acrylic | Corrected vector preparation; cleaner and visually stronger result. |
+| 01 | Black acrylic | Early result; an open-edge issue caused a defect around the mouth. |
+| 02 | Transparent / clear acrylic | Corrected vector preparation; cleaner and visually stronger preferred result. |
 
 The black version was made before the Illustrator patch, so the open edge affected the mouth area. After the vector was repaired, the **transparent acrylic** produced the better result.
 
-![[ARTHUR SWartz.jpeg]]
+![[10_black_acrylic_result.jpeg]]
 *Caption: Early black-acrylic result showing the effect of the unresolved open-edge region around the mouth.*
 
-![[Arthur White.jpeg]]
+![[11_transparent_acrylic_result.jpeg]]
 *Caption: Final transparent-acrylic result after repairing the vector geometry; the cleaner line structure produced the preferred outcome.*
 
 The comparison also showed something I did not fully anticipate at the start: **transparent acrylic can make laser-engraved detail look more refined because ambient light becomes part of the final visual presentation.**
@@ -225,7 +192,7 @@ The comparison also showed something I did not fully anticipate at the start: **
 
 | Problem | Identified cause | Solution implemented | Final outcome |
 |---|---|---|---|
-| Odd / incomplete mouth detail in the first black version | Open edge in the vector geometry | Patched the geometry in Adobe Illustrator before the next run | Cleaner result on the transparent acrylic |
+| Defect around the mouth in the first black version | Open edge in the vector geometry | Patched the geometry in Adobe Illustrator | Cleaner result on the transparent acrylic |
 | Raster image was not directly suitable for fabrication | Original source was a multi-tone image rather than machine-ready paths | Simplified the artwork into a line-based, single-colour representation and converted it for vector use | A usable DXF-based fabrication file |
 | Visual result changed with acrylic finish | Material appearance affected how engraved detail was perceived | Produced a second transparent-acrylic variant using corrected geometry | Transparent version became the preferred result |
 
@@ -239,15 +206,8 @@ The most useful practical lesson was the open-edge problem. It showed that a vec
 
 The transparent acrylic result was also an unexpected takeaway. I initially expected the black version to look stronger, but the transparent material produced a cleaner and more interesting final appearance.
 
-In future, I would spend more time checking the vector geometry before the first machine run and record the complete RDWorks parameter panel so that the final documentation contains exact layer-by-layer settings.
-
 ## 13. Source Files
 
-The original working DXF and Adobe Illustrator AI source files were not included in the supplied project bundle for this update.
+The laser cutting process was captured on video and is available for review:
 
-They should be added here before final faculty submission:
-
-- **DXF source file** — actual working DXF from the laser-cutting job.
-- **AI source file** — actual Illustrator file containing the repaired vector artwork.
-
-These links should be tested after the actual files are added.
+[Laser Cutting Process Video (Google Drive)](https://drive.google.com/file/d/1NFqGuHHW9DXqUykg3XHzzrZwrXTYDvEW/view?usp=sharing)
