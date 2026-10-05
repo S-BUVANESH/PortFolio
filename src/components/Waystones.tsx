@@ -83,7 +83,7 @@ export default function Waystones() {
         <Head n="IV" label="The 20-week archive" aside="FORGE — PRICE ProtoSem" />
         <div className="grid gap-8 lg:grid-cols-12">
           <h2 className="font-display text-[clamp(2.4rem,6vw,6rem)] font-extrabold leading-[0.92] tracking-[-0.03em] lg:col-span-7">
-            Weekly Logs<span className="text-blood">.</span>
+            The Waystones<span className="text-blood">.</span>
           </h2>
           <p className="self-end text-[15px] leading-relaxed text-mist lg:col-span-5">
             Twenty weeks of learning, experiments, presentations and engineering work. Choose a week to preview its record, then open the complete standalone field dossier.

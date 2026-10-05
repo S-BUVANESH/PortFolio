@@ -31,7 +31,7 @@ export default function Seals() {
       <div className="grid gap-16 lg:grid-cols-12">
         {/* education — the scroll of record */}
         <div className="lg:col-span-5">
-          <Cut as="h2" className="font-display text-[clamp(2.4rem,6vw,6rem)] font-extrabold leading-[0.92] tracking-[-0.03em]">Certifications<span className="text-blood">.</span></Cut>
+          <Cut as="h2" className="font-display text-[clamp(2.4rem,6vw,6rem)] font-extrabold leading-[0.92] tracking-[-0.03em]">Seals<span className="text-blood">.</span></Cut>
           <motion.div className="paper relative mt-10 p-7 md:p-9" initial={{ clipPath: 'inset(0 0 100% 0)' }} whileInView={{ clipPath: 'inset(0 0 0% 0)' }} viewport={{ once: true }} transition={{ duration: 1.3, ease: draw }}>
             <div className="flex items-center justify-between">
               <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-blood">Education</span>
