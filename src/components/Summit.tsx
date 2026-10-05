@@ -31,7 +31,7 @@ export default function Summit() {
 
       <div className="relative mx-auto max-w-[1500px]">
         <motion.p initial={{ opacity: 0, letterSpacing: '0.5em' }} whileInView={{ opacity: 1, letterSpacing: '0.22em' }} viewport={{ once: true }} transition={{ duration: 1.6, ease: draw }} className="text-center font-mono text-[11px] uppercase text-bone">
-          Chapter VII · The summit
+          Chapter VII · Contact
         </motion.p>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1.2, delay: 0.3 }} className="mt-6 text-center font-display text-2xl italic text-washi/90 md:text-4xl">
           The path doesn't end here. It leads to a conversation.

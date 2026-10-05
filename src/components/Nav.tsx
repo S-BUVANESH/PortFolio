@@ -4,14 +4,14 @@ import { contact } from '../content'
 import { Mono, cut } from './kit'
 
 export const chapters: [string, string, string][] = [
-  ['top', '0', 'Arrival'],
-  ['origin', 'I', 'Origin'],
-  ['forge', 'II', 'The Forge'],
-  ['trials', 'III', 'Three Trials'],
-  ['waystones', 'IV', 'The Waystones'],
-  ['armory', 'V', 'The Armory'],
-  ['seals', 'VI', 'Seals'],
-  ['summit', 'VII', 'Summit'],
+  ['top', '0', 'Home'],
+  ['origin', 'I', 'About'],
+  ['forge', 'II', 'Experience/ProtoSem'],
+  ['trials', 'III', 'Projects'],
+  ['waystones', 'IV', 'Weekly Logs'],
+  ['armory', 'V', 'Skills'],
+  ['seals', 'VI', 'Certifications'],
+  ['summit', 'VII', 'Contact'],
 ]
 
 export default function Nav({ live }: { live: boolean }) {

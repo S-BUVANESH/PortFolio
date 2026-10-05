@@ -29,11 +29,11 @@ export default function App() {
       <main>
         <Hero live={live} />
         <Origin />
-        <TitleCard n="II" title="The Forge" line="Twenty weeks of tempering." tone="ember" />
+        <TitleCard n="II" title="Experience / ProtoSem" line="Twenty weeks of tempering." tone="ember" />
         <Forge />
-        <TitleCard n="III" title="Three Trials" line="Every problem met with a system." tone="blood" />
+        <TitleCard n="III" title="Projects" line="Every problem met with a system." tone="blood" />
         <Trials />
-        <TitleCard n="IV" title="The Waystones" line="A record of the road, week by week." tone="steel" />
+        <TitleCard n="IV" title="Weekly Logs" line="A record of the road, week by week." tone="steel" />
         <Waystones />
         <Armory />
         <Seals />

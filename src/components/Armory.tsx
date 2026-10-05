@@ -58,7 +58,7 @@ export default function Armory() {
       <Head n="V" label="Skills" aside="Twelve, and only twelve" />
       <div className="grid gap-8 lg:grid-cols-12">
         <div className="lg:col-span-7">
-          <Cut as="h2" className="font-display text-[clamp(2.4rem,6vw,6rem)] font-extrabold leading-[0.92] tracking-[-0.03em]">The Armory<span className="text-blood">.</span></Cut>
+          <Cut as="h2" className="font-display text-[clamp(2.4rem,6vw,6rem)] font-extrabold leading-[0.92] tracking-[-0.03em]">Skills<span className="text-blood">.</span></Cut>
         </div>
         <p className="self-end text-[15px] leading-relaxed text-mist lg:col-span-5">Languages, foundations and AI practice, hung on the rack and ready to use. Brush past one and it swings.</p>
       </div>

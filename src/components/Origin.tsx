@@ -30,7 +30,7 @@ export default function Origin() {
   const [open, setOpen] = useState(1)
   return (
     <section id="origin" data-tone="ink" className="relative mx-auto max-w-[1500px] px-5 py-32 md:px-10 lg:pl-40">
-      <Head n="I" label="Origin" aside="Who walks this path" />
+      <Head n="I" label="About" aside="Who walks this path" />
       <div className="grid gap-10 lg:grid-cols-12">
         <div className="lg:col-span-8">
           <Cut as="h2" className="font-display text-[clamp(2rem,4.6vw,4.6rem)] leading-[1.06] tracking-[-0.02em]">A builder and an explorer —</Cut>
