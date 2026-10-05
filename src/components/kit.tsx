@@ -12,7 +12,7 @@ export function Mono({ children, className = '' }: { children: ReactNode; classN
 export function Cut({ children, className = '', delay = 0, as = 'div' }: { children: ReactNode; className?: string; delay?: number; as?: 'div' | 'h2' | 'h3' | 'p' }) {
   const M = motion[as]
   return (
-    <span className="block overflow-hidden pb-[0.08em]">
+    <span className="block overflow-hidden pb-[0.25em] -mb-[0.17em]">
       <M
         className={className}
         initial={{ y: '105%', skewY: 6 }}
@@ -71,7 +71,7 @@ export function TitleCard({ n, title, line, tone = 'ink' }: { n: string; title: 
       <div className="sticky top-0 grid h-screen place-items-center overflow-hidden px-6">
         <motion.div style={{ opacity: o, scale: s, filter: b }} className="text-center">
           <Mono className="text-mist">Chapter {n}</Mono>
-          <motion.p style={{ clipPath: clip }} className="mt-5 font-display text-[clamp(3rem,11vw,11rem)] font-extrabold leading-[0.9] tracking-[-0.03em] whitespace-nowrap">
+          <motion.p style={{ clipPath: clip }} className="mt-5 pb-[0.25em] -mb-[0.25em] font-display text-[clamp(3rem,11vw,11rem)] font-extrabold leading-[0.9] tracking-[-0.03em] whitespace-nowrap">
             {title}
           </motion.p>
           <motion.div style={{ width: w }} className="mx-auto mt-6 h-px max-w-[min(70vw,640px)] bg-blood" />
