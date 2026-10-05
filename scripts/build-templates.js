@@ -1362,10 +1362,6 @@ function week06PageHtml(ctx, allRecords) {
             </tbody>
           </table>
         </div>
-        <figure class="w06-figure">
-          <img src="${assetBase}/01_Monday/07_actual_laser_settings.png" alt="Actual laser settings" loading="lazy">
-          <figcaption>Actual laser settings showing 100.00 mm/s speed and 30% power for both scan and cut operations.</figcaption>
-        </figure>
       </div>
     </div>
 

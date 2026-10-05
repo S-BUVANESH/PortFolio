@@ -149,8 +149,6 @@ The settings used during the session are explicitly drawn from the exact RDWorks
 | Acrylic | 2.00 mm | Cut (Perimeter) | 100.00 mm/s | 30.0% | 30.0% | 1 | 20,000 Hz |
 | Acrylic | 2.00 mm | Scan (Engrave) | 100.00 mm/s | 30.0% | 30.0% | 1 | 20,000 Hz |
 
-![[07_actual_laser_settings.png]]
-*Caption: Actual laser settings showing 100.00 mm/s speed and 30% power for both scan and cut operations.*
 
 ## 9. Cutting Process
 
