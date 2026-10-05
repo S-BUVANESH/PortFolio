@@ -3,18 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Week 06 · From Screen to Acrylic: Cutting Arthur Morgan — Buvanesh S.</title>
-<meta name="description" content="From Screen to Acrylic: Cutting Arthur Morgan MONDAY, SEPTEMBER 28 · DIGITAL FABRICATION &amp;amp; LASER CUTTING This week began with a shift from digital design to physical fabrication.">
+<title>Week 06 · Digital Fabrication: Laser Cutting &amp; 3D Printing — Buvanesh S.</title>
+<meta name="description" content="A cinematic field record of Week 06: laser cutting Arthur Morgan in acrylic with a 1490 CO₂ cutter and FDM 3D printing a Batman model on a Bambu Lab H2S. FORGE — PRICE ProtoSem.">
 <meta name="theme-color" content="#0b0a09">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./archive.css">
+<link rel="stylesheet" href="./week06.css">
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
 <div class="grain"></div>
 <div class="reading-progress" aria-hidden="true"><span></span></div>
+
 <header class="site-nav">
   <a class="brand" href="../index.html#waystones">BUVANESH S.</a>
   <div class="nav-meta">ENGINEERING ARCHIVE · WEEK 06</div>
@@ -22,387 +24,665 @@
 </header>
 
 <main>
-  <section class="record-hero">
-    <div class="hero-copy">
-      <div class="eyebrow">FORGE — PRICE PROTOSEM · Published field record</div>
-      <div class="hero-week">
-        <span class="week-word">WEEK</span>
-        <span class="week-number">06</span>
+
+  <!-- ═══════════════════════ CINEMATIC OPENING ═══════════════════════ -->
+  <section class="w06-hero">
+    <div class="w06-hero-bg">
+      <img src="assets/weekly/Week_06/01_Monday/Arthur%20White.jpeg" alt="Transparent acrylic Arthur Morgan — the final laser-cut result" class="w06-hero-img" loading="eager">
+      <div class="w06-hero-overlay"></div>
+    </div>
+    <div class="w06-hero-content">
+      <div class="w06-eyebrow">FORGE — PRICE PROTOSEM · PUBLISHED FIELD RECORD</div>
+      <div class="w06-week-stamp">
+        <span class="w06-week-word">WEEK</span>
+        <span class="w06-week-num">06</span>
       </div>
-      <h1>From Screen to Acrylic: Cutting Arthur Morgan</h1>
-      <p class="hero-summary">From Screen to Acrylic: Cutting Arthur Morgan MONDAY, SEPTEMBER 28 · DIGITAL FABRICATION &amp;amp; LASER CUTTING This week began with a shift from digital design to physical fabrication.</p>
-      <div class="hero-meta">
-        <span>2026-09-29</span>
-        <span>2 days recorded</span>
-        <span>2 visuals</span>
+      <h1 class="w06-hero-title">Digital<br>Fabrication</h1>
+      <p class="w06-hero-sub">From a pixel to acrylic. From an STL to printed reality. Two machines, two materials, two days.</p>
+      <div class="w06-hero-pills">
+        <span>28–29 Sep 2026</span>
+        <span>Laser Cutting</span>
+        <span>3D Printing</span>
+        <span>FORGE Lab</span>
       </div>
     </div>
-    <div class="hero-scene">
-      <div class="scene-ring"></div>
-      <div class="scene-glow"></div>
-      <div class="preview-grid"><figure><img src="assets/weekly/Week_06/01_Monday/ARTHUR%20SWartz.jpeg" alt="Week 6 preview image 1" loading="lazy"><figcaption>Field image 01</figcaption></figure><figure><img src="assets/weekly/Week_06/01_Monday/Arthur%20White.jpeg" alt="Week 6 preview image 2" loading="lazy"><figcaption>Field image 02</figcaption></figure></div>
+    <div class="w06-chapter-index">
+      <a href="#monday">
+        <span class="w06-ci-num">01</span>
+        <span class="w06-ci-label">Monday</span>
+        <span class="w06-ci-sub">Laser Cutting</span>
+      </a>
+      <a href="#tuesday">
+        <span class="w06-ci-num">02</span>
+        <span class="w06-ci-label">Tuesday</span>
+        <span class="w06-ci-sub">3D Printing</span>
+      </a>
     </div>
   </section>
 
-  <section class="record-map">
-    <div>
-      <span class="eyebrow">Record map</span>
-      <h2>Walk the week.</h2>
+  <!-- ═══════════════════════════ MONDAY ═══════════════════════════════ -->
+  <section id="monday" class="w06-chapter">
+    <div class="w06-chapter-banner">
+      <div class="w06-chapter-rail">
+        <span class="w06-chapter-num">01</span>
+        <span class="w06-chapter-line"></span>
+      </div>
+      <div class="w06-chapter-head">
+        <span class="w06-eyebrow">Monday · 28 September 2026</span>
+        <h2>From Screen to Acrylic:<br>Cutting Arthur Morgan</h2>
+        <p class="w06-chapter-intro">This exercise was about taking an idea that normally exists only on a screen and making it physically manufacturable. I chose Arthur Morgan from Red Dead Redemption 2, developed a fabrication-friendly graphic at 50 × 50 mm, prepared it for vector-based laser processing, and produced two acrylic outcomes. The decision was also influenced by the environment — some FORGE staff are gamers, so I wanted the object to have a stronger chance of visual appeal beyond the exercise itself.</p>
+      </div>
     </div>
-    <nav class="day-index" aria-label="Week days">
-      <a href="#day-monday"><span>Monday</span><small>2026-09-28</small></a><a href="#day-tuesday"><span>Tuesday</span><small>2026-09-29</small></a>
-    </nav>
+
+    <!-- 1. Lab Safety -->
+    <div class="w06-section" id="laser-safety">
+      <div class="w06-section-label">
+        <span class="w06-step">01</span>
+        <span>Lab Safety &amp; Safety Rules</span>
+      </div>
+      <div class="w06-section-body">
+        <p>Laser cutting combines concentrated heat, moving machinery, smoke generation, and electrical equipment. Before operating the machine, I followed the safety guidance displayed in the FORGE fabrication area.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Safety area</th><th>Practice followed</th></tr></thead>
+            <tbody>
+              <tr><td>Laser safety</td><td>Used the enclosed machine as intended; kept the machine door closed during operation.</td></tr>
+              <tr><td>Exhaust system</td><td>Kept the exhaust / ventilation system operating to remove smoke and fumes.</td></tr>
+              <tr><td>Chiller</td><td>Ensured the cooling system was operating before running the laser.</td></tr>
+              <tr><td>Earthing</td><td>Followed the lab's electrical safety and earthing requirements before operation.</td></tr>
+              <tr><td>Air assist</td><td>Used the machine's air-assist / blowing system during processing.</td></tr>
+              <tr><td>Material verification</td><td>Used acrylic, which is listed as an authorised material in the FORGE guidance.</td></tr>
+              <tr><td>Supervision</td><td>Did not leave the cutter unattended during operation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="w06-figure w06-figure--full">
+          <img src="assets/weekly/Week_06/01_Monday/Laser%20Cutter%20Safety%20Rules.png" alt="FORGE laser-cutter safety notice" loading="lazy">
+          <figcaption>FORGE laser-cutter safety notice showing precautions, operating do's and don'ts, authorised materials, and banned materials.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 2. Machine Details -->
+    <div class="w06-section" id="laser-machine">
+      <div class="w06-section-label">
+        <span class="w06-step">02</span>
+        <span>Machine Details</span>
+      </div>
+      <div class="w06-section-body">
+        <p>The machine used for the exercise was the <strong>1490 CO₂ laser cutter in the FORGE lab</strong>. All specification values below are taken directly from the physical machine placard; no manufacturer name was visible on the supplied evidence.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Specification</th><th>Observed / documented value</th></tr></thead>
+            <tbody>
+              <tr><td>Make / Manufacturer</td><td>Not identified on the machine placard</td></tr>
+              <tr><td>Model</td><td>1490 CO₂ Laser</td></tr>
+              <tr><td>Working / Bed Area</td><td>1300 × 900 mm</td></tr>
+              <tr><td>Laser Power</td><td>150 W</td></tr>
+              <tr><td>Machine Power</td><td>1000 W</td></tr>
+              <tr><td>Listed Cutting Speed</td><td>25 m/min (max capability)</td></tr>
+              <tr><td>Listed Engraving Speed</td><td>55 m/min (max capability)</td></tr>
+              <tr><td>Listed Accuracy</td><td>0.1 mm</td></tr>
+              <tr><td>Working Temperature</td><td>0 °C – 40 °C</td></tr>
+              <tr><td>Blowing System</td><td>Lower blowing system</td></tr>
+              <tr><td>Control Software</td><td>RDWorks V8</td></tr>
+              <tr><td>Listed Materials</td><td>Acrylic, plywood, MDF, foam board, cardboard, paper</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="w06-figure w06-figure--full">
+          <img src="assets/weekly/Week_06/01_Monday/Laser%20Cutter%20Machine%20Details.png" alt="1490 CO₂ laser cutter specification placard" loading="lazy">
+          <figcaption>Machine specification placard for the 1490 CO₂ laser cutter used in the FORGE fabrication lab.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 3. Materials Used -->
+    <div class="w06-section" id="laser-materials">
+      <div class="w06-section-label">
+        <span class="w06-step">03</span>
+        <span>Materials Used</span>
+      </div>
+      <div class="w06-section-body">
+        <p>I used FORGE lab stock acrylic in two finishes to compare how material choice changes the visual character of the same geometry.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Material</th><th>Thickness</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr><td>Black acrylic</td><td>2 mm</td><td>FORGE lab stock</td></tr>
+              <tr><td>Transparent / clear acrylic</td><td>2 mm</td><td>FORGE lab stock</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Selected Design -->
+    <div class="w06-section" id="laser-design">
+      <div class="w06-section-label">
+        <span class="w06-step">04</span>
+        <span>Selected Design / Image</span>
+      </div>
+      <div class="w06-section-body">
+        <p>The selected subject was <strong>Arthur Morgan from Red Dead Redemption 2</strong>. I chose the subject because I wanted a design with recognisable character and visual appeal. The target size was <strong>50 × 50 mm</strong>, so the image had to remain readable after simplification for fabrication.</p>
+        <figure class="w06-figure w06-figure--hero">
+          <img src="assets/weekly/Week_06/01_Monday/Arthur%20Morgan%20Selected%20Design.png" alt="Arthur Morgan RDR2 reference artwork selected as the starting point" loading="lazy">
+          <figcaption>Arthur Morgan reference artwork selected as the starting point for the 50 × 50 mm fabrication design. Gaming theme chosen for its recognisable visual appeal and potential market interest.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 5. Image-to-DXF Conversion -->
+    <div class="w06-section" id="laser-dxf">
+      <div class="w06-section-label">
+        <span class="w06-step">05</span>
+        <span>Image-to-DXF Conversion</span>
+      </div>
+      <div class="w06-section-body">
+        <p>A normal raster image cannot directly become a useful laser-cutting path. The design went through several preparation stages before it was machine-ready.</p>
+        <div class="w06-workflow">
+          <div class="w06-workflow-step"><span class="w06-wf-tool">Gemini</span><span class="w06-wf-desc">Generated a 50 × 50 mm concept image based on Arthur Morgan</span></div>
+          <div class="w06-workflow-arrow">↓</div>
+          <div class="w06-workflow-step"><span class="w06-wf-tool">ChatGPT</span><span class="w06-wf-desc">Simplified the image into a high-contrast, line-based representation suitable for vectorisation</span></div>
+          <div class="w06-workflow-arrow">↓</div>
+          <div class="w06-workflow-step"><span class="w06-wf-tool">CloudConvert</span><span class="w06-wf-desc">File-format conversion stage</span></div>
+          <div class="w06-workflow-arrow">↓</div>
+          <div class="w06-workflow-step"><span class="w06-wf-tool">Adobe Illustrator</span><span class="w06-wf-desc">Repaired and refined the vector geometry; patched open edges</span></div>
+          <div class="w06-workflow-arrow">↓</div>
+          <div class="w06-workflow-step"><span class="w06-wf-tool">RDWorks V8</span><span class="w06-wf-desc">Job preparation: layer assignment, scan + cut setup</span></div>
+          <div class="w06-workflow-arrow">↓</div>
+          <div class="w06-workflow-step"><span class="w06-wf-tool">CO₂ Laser</span><span class="w06-wf-desc">Physical acrylic fabrication</span></div>
+        </div>
+        <figure class="w06-figure w06-figure--hero">
+          <img src="assets/weekly/Week_06/01_Monday/Arthur%20Morgan%20Vector%20Conversion.png" alt="Arthur Morgan simplified to single-colour line artwork ready for vectorisation" loading="lazy">
+          <figcaption>Simplified single-colour line artwork prepared for vector-based fabrication. The important design decision was eliminating colour information and retaining structure as strokes that a laser workflow could interpret.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 6. File Preparation -->
+    <div class="w06-section" id="laser-fileprep">
+      <div class="w06-section-label">
+        <span class="w06-step">06</span>
+        <span>File Preparation</span>
+      </div>
+      <div class="w06-section-body">
+        <p>After conversion, the vector required manual cleanup before it was safe to send to the laser cutter. The most critical repair was <strong>open edges</strong> — an open edge can change how a machine interprets a boundary.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Preparation step</th><th>What was done</th></tr></thead>
+            <tbody>
+              <tr><td>Vector cleaning</td><td>Removed or corrected geometry that could interfere with the final result.</td></tr>
+              <tr><td>Scaling</td><td>Prepared the design around the intended 50 × 50 mm size.</td></tr>
+              <tr><td>Closed paths</td><td>Repaired open edges so cutting boundaries could be interpreted correctly by the machine.</td></tr>
+              <tr><td>Duplicate geometry</td><td>Cleaned unnecessary vector elements before machine setup.</td></tr>
+              <tr><td>Final verification</td><td>Inspected the vector again in Illustrator before importing into RDWorks.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Nesting & Layout in RDWorks -->
+    <div class="w06-section" id="laser-rdworks">
+      <div class="w06-section-label">
+        <span class="w06-step">07</span>
+        <span>Nesting &amp; Layout in RDWorks</span>
+      </div>
+      <div class="w06-section-body">
+        <p>In RDWorks V8, I imported the DXF, placed the design on the material layout, and separated the fabrication behaviour into cutting and scanning operations using colour-coded layers.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>RDWorks layer colour</th><th>Operation</th></tr></thead>
+            <tbody>
+              <tr><td><span class="w06-layer w06-layer--red">■ Red</span></td><td>Cut — follows the outer boundary through the material</td></tr>
+              <tr><td><span class="w06-layer w06-layer--blue">■ Blue</span></td><td>Scan / Engrave — surface detail and internal geometry</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="w06-figure-pair">
+          <figure class="w06-figure">
+            <img src="assets/weekly/Week_06/01_Monday/RDWorks%20Final%20Layout.png" alt="RDWorks final vector layout with colour-coded processing paths" loading="lazy">
+            <figcaption>Final RDWorks layout showing the vector artwork and colour-coded processing paths ready for fabrication.</figcaption>
+          </figure>
+          <figure class="w06-figure">
+            <img src="assets/weekly/Week_06/01_Monday/RDWorks%20Scan%20Preview.png" alt="RDWorks preview of the scan/engraving geometry" loading="lazy">
+            <figcaption>RDWorks preview of the line-based scan / engraving geometry before the fabrication run.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Final Machine Settings -->
+    <div class="w06-section" id="laser-settings">
+      <div class="w06-section-label">
+        <span class="w06-step">08</span>
+        <span>Final Machine Settings</span>
+      </div>
+      <div class="w06-section-body">
+        <p>Values that can be recovered from session evidence are recorded here. Where layer-specific numeric entries were not preserved in the available documentation, they are explicitly marked rather than estimated.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Material</th><th>Thickness</th><th>Operation</th><th>Speed</th><th>Min Power</th><th>Max Power</th><th>Passes</th><th>Frequency</th></tr></thead>
+            <tbody>
+              <tr><td>Acrylic</td><td>2 mm</td><td>Cut — Red</td><td>≈100 mm/s*</td><td>Not recorded</td><td>Not recorded</td><td>Not recorded</td><td>Not recorded</td></tr>
+              <tr><td>Acrylic</td><td>2 mm</td><td>Scan — Blue</td><td>≈100 mm/s*</td><td>Not recorded</td><td>Not recorded</td><td>Not recorded</td><td>Not recorded</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="w06-note">* Approximately 100 mm/s is a recalled session value. The original RDWorks layer-specific numeric entry was not preserved in the available evidence. The machine placard lists maximum capabilities of 25 m/min cutting and 55 m/min engraving — these are machine specifications, not the settings used for this job.</p>
+      </div>
+    </div>
+
+    <!-- 9. Cutting Process -->
+    <div class="w06-section" id="laser-process">
+      <div class="w06-section-label">
+        <span class="w06-step">09</span>
+        <span>Cutting Process</span>
+      </div>
+      <div class="w06-section-body">
+        <ol class="w06-list">
+          <li>Verified the prepared geometry in RDWorks before sending the job.</li>
+          <li>Loaded the 2 mm acrylic sheet onto the machine bed.</li>
+          <li>Confirmed the RDWorks placement and processing colour assignments.</li>
+          <li>Ran the scan / engraving layer (Blue) for surface detail.</li>
+          <li>Ran the cut layer (Red) to separate the outer boundary.</li>
+          <li>Checked the resulting acrylic piece for quality.</li>
+        </ol>
+        <div class="w06-pending-slot">
+          <span class="w06-pending-icon">◻</span>
+          <div>
+            <strong>Cutting-process photograph — awaiting submission</strong><br>
+            A photograph of the laser actively cutting the acrylic was not included in the supplied media bundle. Add the actual photograph here with a descriptive caption before final faculty submission.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Final Result -->
+    <div class="w06-section w06-section--results" id="laser-result">
+      <div class="w06-section-label">
+        <span class="w06-step">10</span>
+        <span>Final Result — Hero Shot</span>
+      </div>
+      <div class="w06-section-body">
+        <p>I produced two physical variants from the same digital geometry. The results showed that <strong>material choice is a design decision, not an afterthought</strong>.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Variant</th><th>Material</th><th>Vector state</th><th>Observation</th></tr></thead>
+            <tbody>
+              <tr><td>01</td><td>Black acrylic</td><td>Before full Illustrator patch</td><td>Open-edge issue caused an unwanted detail in the mouth area.</td></tr>
+              <tr><td>02</td><td>Transparent acrylic</td><td>After vector repair</td><td>Cleaner result. Preferred and final outcome. Ambient light through the material adds refinement to the engraved detail.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="w06-results-pair">
+          <figure class="w06-figure w06-figure--result">
+            <img src="assets/weekly/Week_06/01_Monday/ARTHUR%20SWartz.jpeg" alt="Early black acrylic Arthur Morgan — open-edge mouth defect visible" loading="lazy">
+            <figcaption>Early black-acrylic result showing the effect of the unresolved open-edge region around the mouth. Made before the Illustrator vector patch was fully applied.</figcaption>
+          </figure>
+          <figure class="w06-figure w06-figure--result w06-figure--preferred">
+            <div class="w06-preferred-badge">Preferred result</div>
+            <img src="assets/weekly/Week_06/01_Monday/Arthur%20White.jpeg" alt="Final transparent acrylic result — corrected vector, preferred outcome" loading="lazy">
+            <figcaption>Final transparent-acrylic result after repairing the vector geometry. The cleaner line structure produced the preferred outcome. Transparent acrylic allows ambient light to become part of the visual presentation.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Problems Faced -->
+    <div class="w06-section" id="laser-problems">
+      <div class="w06-section-label">
+        <span class="w06-step">11</span>
+        <span>Problems Faced &amp; Solutions</span>
+      </div>
+      <div class="w06-section-body">
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Problem</th><th>Identified cause</th><th>Solution implemented</th><th>Final outcome</th></tr></thead>
+            <tbody>
+              <tr><td>Incomplete mouth detail in the first black version</td><td>Open edge in the vector geometry</td><td>Patched the open path in Adobe Illustrator before the next run</td><td>Cleaner result on the transparent acrylic</td></tr>
+              <tr><td>Raster image not suitable for direct fabrication</td><td>Original was a multi-tone image rather than machine-ready paths</td><td>Simplified into a line-based, single-colour representation and converted for vector use</td><td>A usable DXF-based fabrication file</td></tr>
+              <tr><td>Visual result changed with acrylic finish</td><td>Material appearance affected how engraved detail was perceived</td><td>Produced a second transparent-acrylic variant using corrected geometry</td><td>Transparent version became the preferred result</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Reflection -->
+    <div class="w06-section" id="laser-reflection">
+      <div class="w06-section-label">
+        <span class="w06-step">12</span>
+        <span>Reflection</span>
+      </div>
+      <div class="w06-section-body w06-section-body--reflection">
+        <blockquote class="w06-quote">The interesting part was not operating the laser — it was understanding that the digital image had to become machine-readable geometry before the machine could do anything useful with it.</blockquote>
+        <p>I learned how image selection, simplification, vector preparation, closed paths, layer assignment, material choice and machine parameters all affect the final physical object. The most useful practical lesson was the open-edge problem: a vector file can look correct on screen and still produce a poor physical result.</p>
+        <p>The transparent acrylic result was also an unexpected takeaway. I initially expected the black version to look stronger, but the transparent material produced a cleaner and more interesting final appearance.</p>
+        <p>In future, I would spend more time checking vector geometry before the first machine run and record the complete RDWorks parameter panel so that final documentation contains exact layer-by-layer settings.</p>
+      </div>
+    </div>
+
+    <!-- 13. Source Files -->
+    <div class="w06-section" id="laser-files">
+      <div class="w06-section-label">
+        <span class="w06-step">13</span>
+        <span>Source Files</span>
+      </div>
+      <div class="w06-section-body">
+        <div class="w06-files-grid">
+          <div class="w06-file-slot w06-file-slot--pending">
+            <span class="w06-file-icon">◻</span>
+            <div>
+              <strong>DXF source file</strong><br>
+              <span class="w06-file-status">Awaiting upload — add the actual working DXF from the laser-cutting job before final faculty submission.</span>
+            </div>
+          </div>
+          <div class="w06-file-slot w06-file-slot--pending">
+            <span class="w06-file-icon">◻</span>
+            <div>
+              <strong>Adobe Illustrator AI source file</strong><br>
+              <span class="w06-file-status">Awaiting upload — add the actual Illustrator file containing the repaired vector artwork before final faculty submission.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="record-body">
-    
-    
-    <section class="day-record" id="day-monday">
-      <div class="day-rail">
-        <span>01</span>
-        <span>Monday</span>
+  <!-- ═══════════════════════════ TUESDAY ══════════════════════════════ -->
+  <section id="tuesday" class="w06-chapter w06-chapter--tuesday">
+    <div class="w06-chapter-banner">
+      <div class="w06-chapter-rail">
+        <span class="w06-chapter-num">02</span>
+        <span class="w06-chapter-line"></span>
       </div>
-      <div class="day-body">
-        <div class="day-heading">
-          <span class="eyebrow">Monday · 2026-09-28</span>
-          <span class="day-line"></span>
+      <div class="w06-chapter-head">
+        <span class="w06-eyebrow">Tuesday · 29 September 2026</span>
+        <h2>From STL to Batman:<br>A 3D Printing Study</h2>
+        <p class="w06-chapter-intro">The second half of the week moved from subtractive laser fabrication to additive manufacturing. I initially explored a functional wallet model, but the printed geometry was not working as intended, so I switched to a Batman 3D model for the actual print study — a model with richer surface detail and a clear way to study how slicer decisions affect a physical print.</p>
+      </div>
+    </div>
+
+    <!-- 1. Printer Details -->
+    <div class="w06-section" id="print-printer">
+      <div class="w06-section-label">
+        <span class="w06-step">01</span>
+        <span>Printer Details</span>
+      </div>
+      <div class="w06-section-body">
+        <p>The printer used was the <strong>Bambu Lab H2S</strong>, a single-nozzle FDM printer. All specification values below are from Bambu Lab's official technical documentation.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Specification</th><th>Bambu Lab H2S</th></tr></thead>
+            <tbody>
+              <tr><td>Make</td><td>Bambu Lab</td></tr>
+              <tr><td>Model</td><td>H2S</td></tr>
+              <tr><td>Technology</td><td>FDM / FFF</td></tr>
+              <tr><td>Build Volume</td><td>340 × 320 × 340 mm</td></tr>
+              <tr><td>Included Nozzle</td><td>0.4 mm hardened steel</td></tr>
+              <tr><td>Supported Nozzle Diameters</td><td>0.2 / 0.4 / 0.6 / 0.8 mm</td></tr>
+              <tr><td>Maximum Nozzle Temperature</td><td>350 °C</td></tr>
+              <tr><td>Maximum Heatbed Temperature</td><td>120 °C</td></tr>
+              <tr><td>Maximum Chamber Temperature</td><td>65 °C (actively heated)</td></tr>
+              <tr><td>Maximum Toolhead Speed</td><td>1000 mm/s</td></tr>
+              <tr><td>Maximum Toolhead Acceleration</td><td>20,000 mm/s²</td></tr>
+              <tr><td>Filament Diameter</td><td>1.75 mm</td></tr>
+              <tr><td>Supported Materials</td><td>PLA, PETG, TPU, ABS, ASA, PC, PA, PET and selected fibre-reinforced filaments</td></tr>
+            </tbody>
+          </table>
         </div>
-        
-          <article class="note-card">
-            <div class="source">laser_cutting_week06_monday.md</div>
-            <h2>From Screen to Acrylic: Cutting Arthur Morgan</h2>
-<p><em>MONDAY, SEPTEMBER 28 · DIGITAL FABRICATION &amp; LASER CUTTING</em></p>
-<p>This week began with a shift from digital design to physical fabrication. Instead of stopping at an image on a screen, I took an <strong>Arthur Morgan reference image</strong>, converted it into a fabrication-ready illustration, and turned it into an acrylic piece using a <strong>CO₂ laser cutter</strong>.</p>
-<h3>What Is Laser Cutting?</h3>
-<p><strong>Laser cutting</strong> is a digital fabrication process in which a focused laser is directed along computer-controlled paths to <strong>cut, engrave, or mark material</strong>. The laser delivers concentrated heat to a small area, causing the material to melt, vaporise, burn, or otherwise separate depending on the material and process settings.</p>
-<p>The useful part of the process is the digital connection: once the geometry is prepared, the machine can reproduce it accurately without manually tracing or cutting the design.</p>
-<blockquote>
-<p><strong>Digital drawing → machine path → controlled heat → physical object.</strong></p>
-</blockquote>
-<h3>How Laser Processing Is Classified</h3>
-<p>Laser fabrication can be understood in two ways: by <strong>what the laser is doing to the material</strong> and by <strong>what type of laser source is being used</strong>.</p>
-<h4>By Process</h4>
-<p><strong>Cutting</strong> follows a vector path and passes through the material to create the final outline.</p>
-<p><strong>Scanning / Engraving</strong> moves the laser across an area to create surface detail rather than cutting completely through the sheet.</p>
-<p>Other industrial processes include <strong>marking, ablation, vaporisation, melting and thermal-stress cracking</strong>, depending on the material and application.</p>
-<h4>By Laser Type</h4>
-<p>The main laser families encountered in fabrication are <strong>CO₂, fiber, and Nd-based lasers</strong>. Their wavelength and energy characteristics make them suitable for different materials.</p>
-<p>For this project, I used a <strong>CO₂ laser</strong>, which is commonly used for non-metal sheet materials such as acrylic, wood, MDF, paper and certain plastics.</p>
-<h3>The Material: Acrylic</h3>
-<p>Acrylic is a thermoplastic sheet material that works well for laser fabrication when the material is specifically intended for laser processing. It can produce clean, highly visible edges and is available in different finishes.</p>
-<p>I produced two versions from the same digital design:</p>
-<ul>
-<li><strong>Black acrylic</strong> — a solid, high-contrast version.</li>
-<li><strong>Transparent acrylic</strong> — a translucent version where the background and ambient light became part of the visual appearance.</li>
-</ul>
-<p>This was a useful reminder that fabrication is not only about geometry. <strong>Material choice changes the character of the final object.</strong></p>
-<h3>From Image to DXF</h3>
-<p>The interesting part of this project happened before the laser was even turned on.</p>
-<p>I started with a <strong>reference image of Arthur Morgan sourced online</strong>. A normal image file is not a suitable cutting path by itself, so I converted the image into a simplified <strong>illustration</strong> that retained the important visual features while reducing unnecessary detail.</p>
-<p>The design was then converted into vector geometry and exported as a <strong>DXF (Drawing Exchange Format)</strong> file.</p>
-<p>The complete preparation chain was:</p>
-<pre><code class="language-text">Online Reference Image
-        ↓
-Illustration / Simplification
-        ↓
-Vector Geometry
-        ↓
-DXF
-        ↓
-RDWorks V8
-        ↓
-Scan + Cut Operations
-        ↓
-CO₂ Laser Cutter
-        ↓
-Acrylic Prototype</code></pre>
-<h3>RDWorks V8: Turning Geometry into a Machine Job</h3>
-<p>I used <strong>RDWorks V8</strong> to prepare the DXF for fabrication. The software acted as the bridge between the vector drawing and the laser machine.</p>
-<p>I imported the DXF, positioned the design on the material, and assigned different regions to different processing modes.</p>
-<p>The two important modes I worked with were:</p>
-<ul>
-<li><strong>Scan</strong> — used for engraving / surface detail.</li>
-<li><strong>Cut</strong> — used for following vector outlines and cutting through the acrylic.</li>
-</ul>
-<p>This separation was important because the final piece was not simply a silhouette. It combined <strong>surface information with a physical cut boundary</strong>.</p>
-<h3>What Actually Controls a Laser Cut?</h3>
-<p>A laser cutter is precise, but it is not magic. The result depends on the relationship between several parameters.</p>
-<p><strong>Power</strong> determines how much energy reaches the material.</p>
-<p><strong>Speed</strong> determines how long the laser interacts with a given point.</p>
-<p><strong>Focus</strong> controls how concentrated the laser spot is.</p>
-<p><strong>Material thickness and composition</strong> determine how the sheet responds to the heat.</p>
-<p><strong>Air assistance and ventilation</strong> affect the cutting environment, smoke removal, and edge quality.</p>
-<p>For dimension-critical fabrication, <strong>kerf</strong> also matters. The laser removes a finite amount of material along the path, so the programmed line is not infinitely thin.</p>
-<h3>Advantages I Saw in the Process</h3>
-<p>Laser cutting made it possible to move quickly from a digital illustration to a physical acrylic object. The process offers <strong>repeatability, detailed geometry, fast prototyping, and a highly digital workflow</strong>. It is particularly effective for sheet materials where the required result is fundamentally planar.</p>
-<h3>Limitations I Noticed</h3>
-<p>The same process has constraints. Laser cutting is <strong>material-dependent</strong>, generates heat and fumes, and can produce melted or heat-affected edges. The machine also requires appropriate ventilation, material verification and safe operating practices.</p>
-<p>Most importantly, the design has to be prepared for the machine. A photograph that looks perfect on a display can be useless as a cutting file until its information is converted into geometry the laser can actually interpret.</p>
-<h3>The Two Results</h3>
-<p>The same DXF geometry produced two different physical outcomes:</p>
-<div class="archive-table-wrap"><table class="archive-table"><thead><tr>
-<th>Variant</th>
-<th>Material</th>
-<th>Visual Character</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>01</strong></td>
-<td>Black Acrylic</td>
-<td>Strong, solid contrast</td>
-</tr>
-<tr>
-<td><strong>02</strong></td>
-<td>Transparent Acrylic</td>
-<td>Light, translucent appearance</td>
-</tr>
-</tbody></table></div>
-<p><figure class="archive-inline-figure"><img class="archive-image" src="assets/weekly/Week_06/01_Monday/ARTHUR%20SWartz.jpeg" alt="ARTHUR SWartz.jpeg" loading="lazy"><figcaption>ARTHUR SWartz.jpeg</figcaption></figure></p>
-<p><figure class="archive-inline-figure"><img class="archive-image" src="assets/weekly/Week_06/01_Monday/Arthur%20White.jpeg" alt="Arthur White.jpeg" loading="lazy"><figcaption>Arthur White.jpeg</figcaption></figure> The geometry stayed constant; the <strong>material changed the visual result</strong>.</p>
-<h3>What I Took Away</h3>
-<p>The biggest lesson from this exercise was that <strong>digital fabrication begins long before the machine starts</strong>. The real work was translating an image into a fabrication language: simplifying it, vectorising it, choosing what should be scanned and what should be cut, and then selecting a material that could reproduce the intended result.</p>
-<p>The laser cutter did not replace the design process. It exposed whether the design was actually ready to become physical.</p>
-<blockquote>
-<p><strong>A screen shows what a design looks like. Fabrication reveals whether the design works.</strong></p>
-</blockquote>
-          </article>
-        
-        
       </div>
-    </section>
-  
-    <section class="day-record" id="day-tuesday">
-      <div class="day-rail">
-        <span>02</span>
-        <span>Tuesday</span>
+    </div>
+
+    <!-- 2. Slicer & Material -->
+    <div class="w06-section" id="print-slicer">
+      <div class="w06-section-label">
+        <span class="w06-step">02</span>
+        <span>Slicer &amp; Material</span>
       </div>
-      <div class="day-body">
-        <div class="day-heading">
-          <span class="eyebrow">Tuesday · 2026-09-29</span>
-          <span class="day-line"></span>
+      <div class="w06-section-body">
+        <div class="w06-kv-grid">
+          <div class="w06-kv"><span class="w06-kv-label">Slicer software</span><span class="w06-kv-value">Bambu Studio</span></div>
+          <div class="w06-kv"><span class="w06-kv-label">Material</span><span class="w06-kv-value">PLA Basic</span></div>
+          <div class="w06-kv"><span class="w06-kv-label">Nozzle</span><span class="w06-kv-value">0.4 mm hardened steel</span></div>
         </div>
-        
-          <article class="note-card">
-            <div class="source">3d_printing_week06_tuesday.md</div>
-            <h2>From STL to a Working Wallet</h2>
-<p><em>TUESDAY, SEPTEMBER 29 · ADDITIVE MANUFACTURING &amp; 3D PRINTING</em></p>
-<p>After working with a flat acrylic sheet on the laser cutter, the next exercise moved in the opposite direction: <strong>building a complete three-dimensional object layer by layer</strong>.</p>
-<p>I selected a <strong>functional wallet model</strong> from Maker Lab, prepared it in <strong>Bambu Studio</strong>, optimised it for material usage, and sliced it for printing on a <strong>Bambu Lab H2S</strong> using <strong>PLA Basic</strong>.</p>
-<h3>What Is 3D Printing?</h3>
-<p><strong>3D printing is an additive manufacturing process</strong> in which a digital 3D model is converted into a physical object by creating material one layer at a time.</p>
-<p>Instead of starting with a block and removing material, the printer follows a digital toolpath and <strong>adds only the material needed to form the object</strong>.</p>
-<pre><code class="language-text">3D Model
-   ↓
-Slicing
-   ↓
-Layer-by-Layer Toolpath
-   ↓
-Material Deposition / Curing / Fusion
-   ↓
-Physical Part</code></pre>
-<p>The important step between the model and the printer is <strong>slicing</strong>. The slicer converts the 3D geometry into the instructions required for the machine: walls, infill, supports, travel moves and layer-by-layer deposition.</p>
-<h3>The Major Families of 3D Printing</h3>
-<p>There are several additive-manufacturing approaches. The simplest way I found to understand them is by looking at the <strong>starting material</strong>.</p>
-<h4>Filament — FDM / FFF</h4>
-<p>A thermoplastic filament is heated and extruded through a nozzle. Material is deposited along a programmed path, layer after layer.</p>
-<p><strong>Examples:</strong> PLA, PETG, ABS, ASA, TPU and nylon-based filaments.</p>
-<p><strong>This is the technology used in my project.</strong></p>
-<h4>Liquid Resin — SLA / DLP / MSLA</h4>
-<p>Liquid photopolymer resin is selectively cured using light.</p>
-<p><strong>SLA</strong> uses a laser or optical system to cure resin.</p>
-<p><strong>DLP</strong> uses projected light to cure areas of a layer.</p>
-<p><strong>MSLA</strong> uses an LCD mask together with a UV light source.</p>
-<p>These processes are especially useful when very fine detail and smooth surfaces are important.</p>
-<h4>Powder — SLS / SLM / DMLS</h4>
-<p>Powder-based processes selectively fuse or sinter material in a powder bed.</p>
-<p><strong>SLS</strong> is commonly used with polymer powders, while <strong>SLM</strong> and <strong>DMLS</strong> are associated with metal additive manufacturing.</p>
-<p>These technologies are useful for complex engineering geometries that would be difficult to create through conventional manufacturing.</p>
-<h4>Other Approaches</h4>
-<p>Additive manufacturing also includes <strong>material jetting, binder jetting, sheet lamination, and directed energy deposition (DED)</strong>. These use different combinations of deposited material, powder, sheets, binders, or focused energy.</p>
-<p>The terminology can look intimidating at first, but the underlying idea is simple: <strong>change how material exists, control where it goes, and build the object layer by layer.</strong></p>
-<h3>The Machine: Bambu Lab H2S</h3>
-<p>The printer used for this exercise was the <strong>Bambu Lab H2S</strong>, a large-format, single-nozzle FDM printer.</p>
-<p>Bambu Lab specifies a <strong>340 × 320 × 340 mm build volume</strong>, a <strong>350 °C maximum nozzle temperature</strong>, a <strong>120 °C maximum heatbed temperature</strong>, and a <strong>65 °C actively heated chamber</strong>. It supports toolhead speeds up to <strong>1,000 mm/s</strong> and acceleration up to <strong>20,000 mm/s²</strong>. The standard hotend flow specification is <strong>40 mm³/s</strong>. The machine uses a <strong>1.75 mm filament</strong>, includes a <strong>0.4 mm hardened-steel nozzle</strong>, and supports 0.2, 0.4, 0.6 and 0.8 mm nozzle diameters. citeturn276265search0turn276265search12</p>
-<h4>Key H2S Specifications</h4>
-<div class="archive-table-wrap"><table class="archive-table"><thead><tr>
-<th>Specification</th>
-<th>Bambu Lab H2S</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>Printing Technology</strong></td>
-<td>FDM / FFF</td>
-</tr>
-<tr>
-<td><strong>Build Volume</strong></td>
-<td><strong>340 × 320 × 340 mm</strong></td>
-</tr>
-<tr>
-<td><strong>Nozzle Temperature</strong></td>
-<td><strong>Up to 350 °C</strong></td>
-</tr>
-<tr>
-<td><strong>Heatbed Temperature</strong></td>
-<td><strong>Up to 120 °C</strong></td>
-</tr>
-<tr>
-<td><strong>Active Chamber</strong></td>
-<td><strong>Up to 65 °C</strong></td>
-</tr>
-<tr>
-<td><strong>Maximum Toolhead Speed</strong></td>
-<td><strong>1,000 mm/s</strong></td>
-</tr>
-<tr>
-<td><strong>Maximum Acceleration</strong></td>
-<td><strong>20,000 mm/s²</strong></td>
-</tr>
-<tr>
-<td><strong>Standard Hotend Flow</strong></td>
-<td><strong>40 mm³/s</strong></td>
-</tr>
-<tr>
-<td><strong>Filament Diameter</strong></td>
-<td><strong>1.75 mm</strong></td>
-</tr>
-<tr>
-<td><strong>Included Nozzle</strong></td>
-<td><strong>0.4 mm hardened steel</strong></td>
-</tr>
-<tr>
-<td><strong>Supported Nozzles</strong></td>
-<td><strong>0.2 / 0.4 / 0.6 / 0.8 mm</strong></td>
-</tr>
-<tr>
-<td><strong>Extrusion System</strong></td>
-<td>High-precision PMSM extruder motor</td>
-</tr>
-<tr>
-<td><strong>Filament Cutter</strong></td>
-<td>Built-in</td>
-</tr>
-<tr>
-<td><strong>Chamber Filtration</strong></td>
-<td>G3 pre-filter + H12 HEPA + activated carbon</td>
-</tr>
-<tr>
-<td><strong>Monitoring</strong></td>
-<td>Multiple sensors and onboard cameras</td>
-</tr>
-<tr>
-<td><strong>Software</strong></td>
-<td>Bambu Studio</td>
-</tr>
-</tbody></table></div>
-<p>Bambu Lab also highlights the H2S&#39;s <strong>23 sensors and three onboard cameras</strong>, along with optional Vision Encoder technology for high-precision motion control. citeturn276265search0</p>
-<blockquote>
-<p>The headline speed is a machine capability, not a promise that every model should be printed at 1,000 mm/s. Geometry, material, layer height, extrusion flow, cooling and acceleration limits still determine the practical print settings.</p>
-</blockquote>
-<h3>Interactive 3D Model</h3>
-<p>This is the <strong>3D model used for the printing exercise</strong>, converted from the original STL into a browser-friendly GLB format for interactive inspection.</p>
-<p>{{3D_MODEL:Buvanesh.glb}}</p>
-<p>You can <strong>drag to rotate</strong>, <strong>scroll to zoom</strong>, and inspect the geometry from different angles. This gives the portfolio entry a direct connection between the digital model and the physical fabrication process.</p>
-<h3>Software: Bambu Studio</h3>
-<p>I used <strong>Bambu Studio</strong> to prepare the wallet for printing.</p>
-<p>The slicer was where the digital model became a manufacturing plan. I could change its size, orientation, support strategy, infill, bed adhesion and other parameters before generating the final layers.</p>
-<h3>The Wallet Workflow</h3>
-<p>I chose a <strong>functional wallet model</strong> from Maker Lab rather than a purely decorative object. That changed the goal from &quot;make it look good&quot; to &quot;make it usable while respecting manufacturing constraints.&quot;</p>
-<p>My workflow was:</p>
-<pre><code class="language-text">Functional Wallet Model
-        ↓
-Import into Bambu Studio
-        ↓
-Scale to 90%
-        ↓
-Check Material Usage
-        ↓
-Orient Horizontally
-        ↓
-Add Tree Supports
-        ↓
-Add Outer Brim
-        ↓
-Set 10% Grid Infill
-        ↓
-Slice
-        ↓
-~2 Hour Print Estimate</code></pre>
-<h3>Why I Scaled It to 90%</h3>
-<p>The model was reduced to <strong>90% scale</strong> with the practical goal of keeping the print <strong>under approximately 50 g of material</strong>.</p>
-<p>This was more than a cosmetic resize. Scaling changed the relationship between <strong>size, material consumption and print time</strong>.</p>
-<p>A useful engineering mindset emerged from this: the best model is not automatically the largest or most detailed one. It is the version that satisfies the purpose while staying inside the available constraints.</p>
-<h3>Why Orientation Matters</h3>
-<p>I oriented the wallet to <strong>lay horizontally</strong> on the build plate.</p>
-<p>In FDM printing, orientation affects much more than appearance. It influences:</p>
-<ul>
-<li>layer direction and mechanical behaviour,</li>
-<li>surface finish,</li>
-<li>support requirement,</li>
-<li>print time,</li>
-<li>overhangs,</li>
-<li>and first-layer stability.</li>
-</ul>
-<p>For a functional part, orientation should therefore be treated as a <strong>design decision</strong>, not a last-minute slicer adjustment.</p>
-<h3>Support Strategy</h3>
-<p>I used <strong>tree supports</strong> for regions that needed additional support during printing. Instead of creating a dense block of support material, tree supports branch upward toward the unsupported geometry.</p>
-<p>I also used an <strong>outer brim</strong> to increase the first-layer contact area around the wallet. This helps improve adhesion and reduce the risk of edge lifting during the print.</p>
-<h3>Infill: 10% Grid</h3>
-<p>The wallet was configured with <strong>10% grid infill</strong>.</p>
-<p>Infill controls the internal structure between the outer walls. Increasing it generally increases material use and can increase stiffness; reducing it can save material and time but may reduce structural performance.</p>
-<p>For this prototype, <strong>10% grid</strong> provided a lightweight internal structure while keeping material consumption under control.</p>
-<h3>Material: PLA Basic</h3>
-<p>The selected material was <strong>PLA Basic</strong>, a commonly used thermoplastic for prototyping because it is comparatively easy to print and provides good visual quality for general-purpose models.</p>
-<p>For this exercise, the material was less about pushing the printer to its temperature limits and more about learning how <strong>geometry and slicer decisions translate into a usable object</strong>.</p>
-<h3>The Slice</h3>
-<p>After the model was scaled, oriented and supported, I sliced it in Bambu Studio.</p>
-<p>The slicer estimated a print duration of approximately <strong>2 hours</strong>.</p>
-<p>That number represented a complete manufacturing prediction based on the model and the selected process settings. It was useful because it turned abstract design choices into measurable consequences: <strong>how much material, how much time, and what kind of support structure?</strong></p>
-<h3>What I Learned</h3>
-<p>The biggest difference between 3D printing and laser cutting became clear in this exercise.</p>
-<p>With laser cutting, I was preparing a <strong>2D path for material removal or surface marking</strong>.</p>
-<p>With 3D printing, I was preparing a <strong>3D geometry for controlled material deposition</strong>.</p>
-<p>The common thread was still the same:</p>
-<blockquote>
-<p><strong>The digital file is only the starting point. Manufacturing begins when you account for what the machine can physically do.</strong></p>
-</blockquote>
-<p>The wallet exercise made that idea practical. A 90% scale, horizontal orientation, tree supports, outer brim and 10% grid infill were not random slicer settings. Each one was a response to a constraint — <strong>material usage, stability, geometry, or printability</strong>.</p>
-<h3>Fabrication Mindset</h3>
-<p>This week connected two apparently different machines through one engineering principle:</p>
-<pre><code class="language-text">Design
-  ↓
-Understand the Process
-  ↓
-Prepare the Digital File
-  ↓
-Choose Parameters
-  ↓
-Fabricate
-  ↓
-Inspect the Result
-  ↓
-Iterate</code></pre>
-<p>The interesting part of digital fabrication is not pressing <strong>Print</strong> or <strong>Start</strong>. It is learning how to make the digital model think in the language of the machine.</p>
-<h4>Reference</h4>
-<p>Bambu Lab, <em>H2S — The Ultimate Single-Nozzle 3D Printer Now Bigger Than Ever</em> (official technical overview): https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/</p>
-          </article>
-        
-        
+        <p>The model was prepared, scaled, oriented and sliced in Bambu Studio before being sent to the printer.</p>
       </div>
-    </section>
-  
-    
-    <section class="model-record">
-      <div class="model-record-head">
-        <div>
-          <span class="eyebrow">Interactive artefact</span>
-          <h3>Buvanesh.glb</h3>
+    </div>
+
+    <!-- 3. Printer Limits & Capabilities -->
+    <div class="w06-section" id="print-limits">
+      <div class="w06-section-label">
+        <span class="w06-step">03</span>
+        <span>Printer Limits &amp; Capabilities</span>
+      </div>
+      <div class="w06-section-body">
+        <div class="w06-two-col">
+          <div>
+            <h4 class="w06-col-head">Capabilities observed</h4>
+            <ul class="w06-list">
+              <li>Very high practical print speed and surface-detail reproduction.</li>
+              <li>Large build volume relative to many desktop printers.</li>
+              <li>Ability to place multiple designs on the build plate in a single job.</li>
+              <li>Good dimensional accuracy for the model scale used.</li>
+              <li>Multiple speed modes let the operator trade speed against noise and process margin.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="w06-col-head">Limitations observed</h4>
+            <ul class="w06-list">
+              <li>At high movement speeds, the printer produced noticeable shaking; stability still depends on the geometry and settings.</li>
+              <li>Very high headline speeds are not automatically the best choice for every part.</li>
+              <li>The setup used was single-colour, despite four filament positions being available; higher-end systems can offer broader multi-material capability.</li>
+            </ul>
+          </div>
         </div>
-        <span class="model-hint">Drag · rotate · zoom</span>
+        <h4 class="w06-sub-head">H2S device speed modes</h4>
+        <p class="w06-note">These are relative device-level speed multipliers, not the mm/s values used in the Batman slicer profile.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Preset</th><th>Relative speed</th></tr></thead>
+            <tbody>
+              <tr><td>Silent</td><td>50%</td></tr>
+              <tr><td>Normal / Standard</td><td>100%</td></tr>
+              <tr><td>Sport</td><td>124%</td></tr>
+              <tr><td>Ludicrous</td><td>166%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <model-viewer src="assets/weekly/Week_06/02_Tuesday/Buvanesh.glb" alt="Interactive 3D model — Buvanesh.glb" camera-controls touch-action="pan-y" shadow-intensity="1" exposure="1" environment-image="neutral"></model-viewer>
-    </section>
-  
-    
+    </div>
+
+    <!-- 4. Why Cannot Be Made Subtractively -->
+    <div class="w06-section" id="print-additive">
+      <div class="w06-section-label">
+        <span class="w06-step">04</span>
+        <span>Why the Object Cannot Be Made Subtractively</span>
+      </div>
+      <div class="w06-section-body">
+        <p>The Batman model is a highly detailed, organic 3D form with curved surfaces, recesses, overhangs and many small features. Machining that shape from a solid block using conventional subtractive methods would require substantial multi-axis machine access, complex workholding, multiple tool changes and extensive material removal — especially around recessed or undercut geometry.</p>
+        <p>FDM printing is a better fit for this particular prototype because the printer can build those shapes layer by layer without first removing a large block of material. Additive manufacturing does not require a continuous cutting path to reach every surface; the part is constructed in the order the slicer defines, including internal geometry and overhangs managed by supports.</p>
+      </div>
+    </div>
+
+    <!-- 5. STL Definition -->
+    <div class="w06-section" id="print-stl">
+      <div class="w06-section-label">
+        <span class="w06-step">05</span>
+        <span>STL Definition</span>
+      </div>
+      <div class="w06-section-body">
+        <blockquote class="w06-quote">STL (stereolithography format) represents a 3D object's surface as a collection of triangular facets. The triangles approximate the outer surface of the model, giving the slicer a geometric description it can convert into layers and toolpaths.</blockquote>
+        <p>STL became standard in 3D printing because it is simple, widely supported, and focused on describing the printable surface geometry rather than the full design history of the CAD model.</p>
+      </div>
+    </div>
+
+    <!-- 6. Selected STL File -->
+    <div class="w06-section" id="print-model">
+      <div class="w06-section-label">
+        <span class="w06-step">06</span>
+        <span>Selected STL File</span>
+      </div>
+      <div class="w06-section-body">
+        <p>I initially explored printing a functional wallet model, but the printed geometry did not meet the functional outcome I wanted. I therefore switched to a <strong>Batman 3D model</strong> for the actual exercise. The Batman model was a better print-study subject because it contains curved surfaces, fine surface detail, multiple overhangs, cavities and enough geometric variation to expose the effect of support, infill and layer settings.</p>
+        <figure class="w06-figure w06-figure--hero">
+          <img src="assets/weekly/Week_06/02_Tuesday/Batman%20Bambu%20Studio%20Preview.png" alt="Batman model loaded into Bambu Studio showing full model geometry" loading="lazy">
+          <figcaption>Batman model loaded into Bambu Studio for slicing and layer inspection. The preview shows the full model geometry before support, infill and process parameters are applied.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 7. Slicer Settings -->
+    <div class="w06-section" id="print-settings">
+      <div class="w06-section-label">
+        <span class="w06-step">07</span>
+        <span>Slicer Settings</span>
+      </div>
+      <div class="w06-section-body">
+        <p>These are the settings verified from the session and the supplied Bambu Studio evidence. Values not captured have been left explicitly unrecorded.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Setting</th><th>Final value used / observed</th></tr></thead>
+            <tbody>
+              <tr><td>Nozzle temperature</td><td>≈240 °C</td></tr>
+              <tr><td>Bed temperature</td><td>55 °C</td></tr>
+              <tr><td>Layer height</td><td>0.20 mm</td></tr>
+              <tr><td>Infill percentage</td><td>15%</td></tr>
+              <tr><td>Infill pattern</td><td>Gyroid</td></tr>
+              <tr><td>Wall / shell count</td><td>2</td></tr>
+              <tr><td>Print speed</td><td>Not recorded</td></tr>
+              <tr><td>Supports</td><td>Tree supports</td></tr>
+              <tr><td>Bed adhesion</td><td>Outer brim</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="w06-note">The slicer result shows 212 layers and a Z height of 42.40 mm, consistent with a 0.20 mm layer height for the configured job.</p>
+      </div>
+    </div>
+
+    <!-- 8. Print Time & Material Weight -->
+    <div class="w06-section" id="print-time">
+      <div class="w06-section-label">
+        <span class="w06-step">08</span>
+        <span>Print Time &amp; Material Weight</span>
+      </div>
+      <div class="w06-section-body">
+        <p>The following values are <strong>slicer estimates</strong> — not actual measured final values. Actual print weight and duration will be recorded after the physical print is completed.</p>
+        <div class="w06-table-wrap">
+          <table class="w06-table">
+            <thead><tr><th>Measurement</th><th>Slicer-estimated value</th></tr></thead>
+            <tbody>
+              <tr><td>Model material</td><td>30.81 g · 10.17 m</td></tr>
+              <tr><td>Support material</td><td>5.12 g · 1.69 m</td></tr>
+              <tr><td><strong>Total material (estimated)</strong></td><td><strong>35.93 g · 11.86 m</strong></td></tr>
+              <tr><td>Preparation time</td><td>5 min 25 s</td></tr>
+              <tr><td>Model print time</td><td>2 h 3 min</td></tr>
+              <tr><td><strong>Total estimated time</strong></td><td><strong>2 h 9 min</strong></td></tr>
+              <tr><td>Actual material weight</td><td>Pending — final printed-part measurement not yet recorded</td></tr>
+              <tr><td>Actual print duration</td><td>Pending — final print record not yet available</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="w06-figure w06-figure--hero">
+          <img src="assets/weekly/Week_06/02_Tuesday/Bambu%20Studio%20Slicing%20Result.png" alt="Bambu Studio slicing result: 35.93 g total filament, 2h 9min total estimated time" loading="lazy">
+          <figcaption>Bambu Studio slicing result confirming 35.93 g total estimated filament usage (model 30.81 g + support 5.12 g) and a 2 h 9 min total estimated print time. These are slicer estimates; actual values are pending the physical print.</figcaption>
+        </figure>
+        <p>The original intention was to keep the print comfortably under 50 g. The slicer forecast of 35.93 g confirmed the selected geometry and settings stayed within that material constraint.</p>
+      </div>
+    </div>
+
+    <!-- 9. Final Result -->
+    <div class="w06-section" id="print-result">
+      <div class="w06-section-label">
+        <span class="w06-step">09</span>
+        <span>Final Result</span>
+      </div>
+      <div class="w06-section-body">
+        <div class="w06-pending-slot w06-pending-slot--large">
+          <span class="w06-pending-icon">◻</span>
+          <div>
+            <strong>Final Batman print photograph — awaiting physical print delivery</strong><br>
+            The actual printed Batman result photograph has not yet been supplied. This slot is reserved for the physical print photograph, caption and final weight/duration measurements once the part is received. Do not insert a placeholder image here.
+          </div>
+        </div>
+        <h4 class="w06-sub-head">Interactive 3D Model</h4>
+        <p>The digital Batman geometry can be inspected directly in the browser below. Drag to rotate · scroll to zoom.</p>
+        <div class="model-record">
+          <div class="model-record-head">
+            <div>
+              <span class="eyebrow">Interactive artefact</span>
+              <h3>Buvanesh.glb — Batman 3D model</h3>
+            </div>
+            <span class="model-hint">Drag · rotate · zoom</span>
+          </div>
+          <model-viewer src="assets/weekly/Week_06/02_Tuesday/Buvanesh.glb" alt="Interactive 3D Batman model — drag to rotate, scroll to zoom" camera-controls touch-action="pan-y" shadow-intensity="1" exposure="1" environment-image="neutral"></model-viewer>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Source Files -->
+    <div class="w06-section" id="print-files">
+      <div class="w06-section-label">
+        <span class="w06-step">10</span>
+        <span>Source Files</span>
+      </div>
+      <div class="w06-section-body">
+        <div class="w06-files-grid">
+          <div class="w06-file-slot w06-file-slot--pending">
+            <span class="w06-file-icon">◻</span>
+            <div>
+              <strong>STL source file</strong><br>
+              <span class="w06-file-status">Awaiting upload — add the actual Batman STL file before final faculty submission.</span>
+            </div>
+          </div>
+          <div class="w06-file-slot w06-file-slot--pending">
+            <span class="w06-file-icon">◻</span>
+            <div>
+              <strong>G-code / printer file</strong><br>
+              <span class="w06-file-status">Awaiting upload — add the Bambu Studio output file before final faculty submission.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="w06-section" id="print-reflection">
+      <div class="w06-section-label">
+        <span class="w06-step">—</span>
+        <span>Reflection</span>
+      </div>
+      <div class="w06-section-body w06-section-body--reflection">
+        <blockquote class="w06-quote">The slicer is effectively the translation layer between a model and the machine: orientation, support, infill, walls, temperature and adhesion all change what the printer can actually produce.</blockquote>
+        <p>The 3D-printing exercise made the difference between digital geometry and manufacturable geometry very clear. The strongest practical lesson was that speed is impressive, but <strong>repeatable quality still depends on the constraints of the part</strong>. I could see how the H2S moves extremely quickly, yet the machine also vibrates more noticeably when pushed hard. That balance between capability and process control is something I would pay more attention to in future prints.</p>
+      </div>
+    </div>
+
+    <!-- References -->
+    <div class="w06-section" id="references">
+      <div class="w06-section-label">
+        <span class="w06-step">—</span>
+        <span>References &amp; Credits</span>
+      </div>
+      <div class="w06-section-body">
+        <ul class="w06-refs">
+          <li>Bambu Lab, <em>H2S — The Ultimate Single-Nozzle 3D Printer Now Bigger Than Ever</em>, official technical overview: <a href="https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/" target="_blank" rel="noreferrer">blog.bambulab.com</a></li>
+          <li>Bambu Lab, H2S technical specifications / buying guide: <a href="https://bambulab.com/it/support/buying-guide" target="_blank" rel="noreferrer">bambulab.com</a></li>
+          <li>Bambu Studio — slicing and print preparation software.</li>
+          <li>Google Gemini — used during the AI-assisted image generation stage for the laser-cutting design.</li>
+          <li>ChatGPT — used during the monochrome / stroke-oriented image adaptation stage.</li>
+          <li>Adobe Illustrator — used for vector cleanup and open-edge patching.</li>
+          <li>CloudConvert — used during the image-to-DXF file-format conversion stage.</li>
+          <li>RDWorks V8 — laser job preparation software.</li>
+          <li>Batman 3D model — source model used for the physical printing exercise. Exact source to be confirmed and credited.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
+  <!-- Navigation -->
   <nav class="record-nav" aria-label="Previous and next week">
     <a href="./Week_05.html"><span class="nav-kicker">Previous record</span><strong>Week 05</strong><em>Week 05 — Field Record</em></a>
     <a class="archive-home" href="../index.html#waystones"><span class="nav-kicker">Archive</span><strong>20 weeks</strong><em>Return to the full path</em></a>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T12:59:35.609Z",
+  "generatedAt": "2026-10-05T01:28:49.941Z",
   "source": "portfolio-content",
   "architecture": "Obsidian → GitHub → GitHub Actions → generated standalone HTML dossiers",
   "weeks": [
@@ -141,10 +141,21 @@
       "n": 6,
       "sourceWeek": "Week_06",
       "title": "From Screen to Acrylic: Cutting Arthur Morgan",
-      "summary": "From Screen to Acrylic: Cutting Arthur Morgan MONDAY, SEPTEMBER 28 · DIGITAL FABRICATION &amp; LASER CUTTING This week began with a shift from digital design to physical fabrication.",
+      "summary": "A two-day digital fabrication study spanning laser cutting in acrylic and FDM 3D printing, from image-to-DXF preparation to a printed Batman model.",
       "date": "2026-09-29",
       "status": "published",
-      "tags": [],
+      "tags": [
+        "3d printing",
+        "Bambu H2S",
+        "Bambu Studio",
+        "PLA Basic",
+        "additive manufacturing",
+        "laser cutting",
+        "digital fabrication",
+        "RDWorks",
+        "CO2 laser",
+        "acrylic"
+      ],
       "days": [
         {
           "name": "Monday",
@@ -156,10 +167,12 @@
         }
       ],
       "previewImages": [
-        "/archive/weekly/Week_06/01_Monday/ARTHUR%20SWartz.jpeg",
-        "/archive/weekly/Week_06/01_Monday/Arthur%20White.jpeg"
+        "/archive/weekly/Week_06/01_Monday/Laser%20Cutter%20Safety%20Rules.png",
+        "/archive/weekly/Week_06/01_Monday/Laser%20Cutter%20Machine%20Details.png",
+        "/archive/weekly/Week_06/01_Monday/Arthur%20Morgan%20Selected%20Design.png",
+        "/archive/weekly/Week_06/01_Monday/Arthur%20Morgan%20Vector%20Conversion.png"
       ],
-      "imageCount": 2,
+      "imageCount": 10,
       "hasContent": true,
       "url": "Blogs/Week_06.html"
     },

@@ -1,237 +1,178 @@
 ---
-title: "From STL to a Working Wallet"
+title: "From STL to Batman: A 3D Printing Study"
 week: 6
 day: "02"
 date: "2026-09-29"
+summary: "A two-day digital fabrication study spanning laser cutting in acrylic and FDM 3D printing, from image-to-DXF preparation to a printed Batman model."
+tags: ["3d printing", "Bambu H2S", "Bambu Studio", "PLA Basic", "additive manufacturing"]
 ---
 
-# From STL to a Working Wallet
+# From STL to Batman: A 3D Printing Study
 
 *TUESDAY, SEPTEMBER 29 · ADDITIVE MANUFACTURING & 3D PRINTING*
 
-After working with a flat acrylic sheet on the laser cutter, the next exercise moved in the opposite direction: **building a complete three-dimensional object layer by layer**.
+The second half of the week moved from subtractive laser fabrication to additive manufacturing. I initially explored a functional wallet model, but the printed geometry was not working as a functional wallet, so I switched to a **Batman 3D model** for the actual print study. That change gave me a model with richer surface detail and a clear way to study how slicer decisions affect a physical print.
 
-I selected a **functional wallet model** from Maker Lab, prepared it in **Bambu Studio**, optimised it for material usage, and sliced it for printing on a **Bambu Lab H2S** using **PLA Basic**.
+## 1. Printer Details
 
-## What Is 3D Printing?
-
-**3D printing is an additive manufacturing process** in which a digital 3D model is converted into a physical object by creating material one layer at a time.
-
-Instead of starting with a block and removing material, the printer follows a digital toolpath and **adds only the material needed to form the object**.
-
-```text
-3D Model
-   ↓
-Slicing
-   ↓
-Layer-by-Layer Toolpath
-   ↓
-Material Deposition / Curing / Fusion
-   ↓
-Physical Part
-```
-
-The important step between the model and the printer is **slicing**. The slicer converts the 3D geometry into the instructions required for the machine: walls, infill, supports, travel moves and layer-by-layer deposition.
-
-## The Major Families of 3D Printing
-
-There are several additive-manufacturing approaches. The simplest way I found to understand them is by looking at the **starting material**.
-
-### Filament — FDM / FFF
-
-A thermoplastic filament is heated and extruded through a nozzle. Material is deposited along a programmed path, layer after layer.
-
-**Examples:** PLA, PETG, ABS, ASA, TPU and nylon-based filaments.
-
-**This is the technology used in my project.**
-
-### Liquid Resin — SLA / DLP / MSLA
-
-Liquid photopolymer resin is selectively cured using light.
-
-**SLA** uses a laser or optical system to cure resin.
-
-**DLP** uses projected light to cure areas of a layer.
-
-**MSLA** uses an LCD mask together with a UV light source.
-
-These processes are especially useful when very fine detail and smooth surfaces are important.
-
-### Powder — SLS / SLM / DMLS
-
-Powder-based processes selectively fuse or sinter material in a powder bed.
-
-**SLS** is commonly used with polymer powders, while **SLM** and **DMLS** are associated with metal additive manufacturing.
-
-These technologies are useful for complex engineering geometries that would be difficult to create through conventional manufacturing.
-
-### Other Approaches
-
-Additive manufacturing also includes **material jetting, binder jetting, sheet lamination, and directed energy deposition (DED)**. These use different combinations of deposited material, powder, sheets, binders, or focused energy.
-
-The terminology can look intimidating at first, but the underlying idea is simple: **change how material exists, control where it goes, and build the object layer by layer.**
-
-## The Machine: Bambu Lab H2S
-
-The printer used for this exercise was the **Bambu Lab H2S**, a large-format, single-nozzle FDM printer.
-
-Bambu Lab specifies a **340 × 320 × 340 mm build volume**, a **350 °C maximum nozzle temperature**, a **120 °C maximum heatbed temperature**, and a **65 °C actively heated chamber**. It supports toolhead speeds up to **1,000 mm/s** and acceleration up to **20,000 mm/s²**. The standard hotend flow specification is **40 mm³/s**. The machine uses a **1.75 mm filament**, includes a **0.4 mm hardened-steel nozzle**, and supports 0.2, 0.4, 0.6 and 0.8 mm nozzle diameters. citeturn276265search0turn276265search12
-
-### Key H2S Specifications
+The printer used for the exercise was a **Bambu Lab H2S**, a single-nozzle FDM printer.
 
 | Specification | Bambu Lab H2S |
 |---|---|
-| **Printing Technology** | FDM / FFF |
-| **Build Volume** | **340 × 320 × 340 mm** |
-| **Nozzle Temperature** | **Up to 350 °C** |
-| **Heatbed Temperature** | **Up to 120 °C** |
-| **Active Chamber** | **Up to 65 °C** |
-| **Maximum Toolhead Speed** | **1,000 mm/s** |
-| **Maximum Acceleration** | **20,000 mm/s²** |
-| **Standard Hotend Flow** | **40 mm³/s** |
-| **Filament Diameter** | **1.75 mm** |
-| **Included Nozzle** | **0.4 mm hardened steel** |
-| **Supported Nozzles** | **0.2 / 0.4 / 0.6 / 0.8 mm** |
-| **Extrusion System** | High-precision PMSM extruder motor |
-| **Filament Cutter** | Built-in |
-| **Chamber Filtration** | G3 pre-filter + H12 HEPA + activated carbon |
-| **Monitoring** | Multiple sensors and onboard cameras |
-| **Software** | Bambu Studio |
+| Make | Bambu Lab |
+| Model | H2S |
+| Build Volume | 340 × 320 × 340 mm |
+| Included Nozzle | 0.4 mm hardened steel |
+| Supported Nozzle Diameters | 0.2 / 0.4 / 0.6 / 0.8 mm |
+| Maximum Nozzle Temperature | 350 °C |
+| Maximum Heatbed Temperature | 120 °C |
+| Maximum Toolhead Speed | 1000 mm/s |
+| Maximum Toolhead Acceleration | 20,000 mm/s² |
+| Filament Diameter | 1.75 mm |
+| Technology | FDM / FFF |
+| Supported materials | PLA, PETG, TPU, PVA, BVOH, ABS, ASA, PC, PA, PET, PPS and selected fiber-reinforced filaments |
 
-Bambu Lab also highlights the H2S's **23 sensors and three onboard cameras**, along with optional Vision Encoder technology for high-precision motion control. citeturn276265search0
+The H2S supports a broad range of thermoplastic and engineering filaments. For this exercise I used **PLA Basic**.
 
-> The headline speed is a machine capability, not a promise that every model should be printed at 1,000 mm/s. Geometry, material, layer height, extrusion flow, cooling and acceleration limits still determine the practical print settings.
+## 2. Slicer & Material
 
-## Interactive 3D Model
+**Slicer / software:** Bambu Studio  
+**Material:** PLA Basic  
+**Nozzle:** 0.4 mm hardened steel  
 
-This is the **3D model used for the printing exercise**, converted from the original STL into a browser-friendly GLB format for interactive inspection.
+The model was prepared, scaled, oriented and sliced in Bambu Studio before being sent to the printer.
 
-{{3D_MODEL:Buvanesh.glb}}
+## 3. Printer Limits & Capabilities
 
-You can **drag to rotate**, **scroll to zoom**, and inspect the geometry from different angles. This gives the portfolio entry a direct connection between the digital model and the physical fabrication process.
+### Capabilities observed
 
-## Software: Bambu Studio
+- Very high practical print speed.
+- Strong surface/detail reproduction.
+- Good dimensional accuracy for the model scale used.
+- Large build volume relative to many desktop printers.
+- Ability to place multiple designs on the build plate and process them in one job.
+- Multiple speed modes that let the operator trade speed against noise / process margin.
 
-I used **Bambu Studio** to prepare the wallet for printing.
+### Limitations observed
 
-The slicer was where the digital model became a manufacturing plan. I could change its size, orientation, support strategy, infill, bed adhesion and other parameters before generating the final layers.
+- The setup used for this exercise did not provide the kind of high-capacity multi-colour workflow available on more advanced multi-material systems. The setup had four filament positions available, but the print itself was single-colour.
+- At high movement / printing speeds, the printer produced noticeable shaking. The machine remained very fast, but stability and print quality still depend on the geometry and settings.
+- Very high headline speeds are not automatically the best choice for every part; geometry, material, cooling, acceleration and flow constraints still matter.
 
-## The Wallet Workflow
+### H2S device speed modes
 
-I chose a **functional wallet model** from Maker Lab rather than a purely decorative object. That changed the goal from "make it look good" to "make it usable while respecting manufacturing constraints."
+The printer interface exposes four speed presets. These are **relative device-level speed multipliers**, not the exact mm/s values for the Batman slicer profile:
 
-My workflow was:
+| Preset | Relative speed |
+|---|---:|
+| Silent | 50% |
+| Normal / Standard | 100% |
+| Sport | 124% |
+| Ludicrous | 166% |
 
-```text
-Functional Wallet Model
-        ↓
-Import into Bambu Studio
-        ↓
-Scale to 90%
-        ↓
-Check Material Usage
-        ↓
-Orient Horizontally
-        ↓
-Add Tree Supports
-        ↓
-Add Outer Brim
-        ↓
-Set 10% Grid Infill
-        ↓
-Slice
-        ↓
-~2 Hour Print Estimate
-```
+These are device-level speed presets relative to the standard profile. They should not be confused with the machine's **1000 mm/s maximum toolhead speed** or with a specific Bambu Studio process profile.
 
-## Why I Scaled It to 90%
+## 4. Why the Object Cannot Be Made Subtractively
 
-The model was reduced to **90% scale** with the practical goal of keeping the print **under approximately 50 g of material**.
+The Batman model is a highly detailed, organic 3D form with curved surfaces, recesses, overhangs, and many small features. Machining that shape from a solid block using conventional subtractive methods would require substantial multi-axis access, workholding, tool changes and material removal, especially around recessed or difficult-to-reach geometry.
 
-This was more than a cosmetic resize. Scaling changed the relationship between **size, material consumption and print time**.
+FDM printing is a better fit for this particular prototype because the printer can build those shapes layer by layer without first removing a large block of material.
 
-A useful engineering mindset emerged from this: the best model is not automatically the largest or most detailed one. It is the version that satisfies the purpose while staying inside the available constraints.
+## 5. STL Definition
 
-## Why Orientation Matters
+**STL (stereolithography format)** represents a 3D object's surface as a collection of **triangular facets**. The triangles approximate the outer surface of the model, giving the slicer a geometric description it can convert into layers and toolpaths.
 
-I oriented the wallet to **lay horizontally** on the build plate.
+STL became common in 3D printing because it is simple, widely supported, and focused on describing the printable surface geometry rather than the full design history of the CAD model.
 
-In FDM printing, orientation affects much more than appearance. It influences:
+## 6. Selected STL File
 
-- layer direction and mechanical behaviour,
-- surface finish,
-- support requirement,
-- print time,
-- overhangs,
-- and first-layer stability.
+I initially considered printing a functional wallet, but the first model did not meet the functional outcome I wanted. I therefore switched to a **Batman 3D model** for the actual exercise.
 
-For a functional part, orientation should therefore be treated as a **design decision**, not a last-minute slicer adjustment.
+The Batman model was a better print-study subject because it contains:
 
-## Support Strategy
+- curved surfaces,
+- fine surface details,
+- multiple overhangs,
+- cavities and recesses,
+- and enough geometric variation to expose the effect of support, infill and layer settings.
 
-I used **tree supports** for regions that needed additional support during printing. Instead of creating a dense block of support material, tree supports branch upward toward the unsupported geometry.
+The original source model was imported into Bambu Studio for preparation.
 
-I also used an **outer brim** to increase the first-layer contact area around the wallet. This helps improve adhesion and reduce the risk of edge lifting during the print.
+![[Batman Bambu Studio Preview.png]]
 
-## Infill: 10% Grid
+*Caption: Batman model loaded into Bambu Studio for slicing and layer inspection.*
 
-The wallet was configured with **10% grid infill**.
+## 7. Slicer Settings
 
-Infill controls the internal structure between the outer walls. Increasing it generally increases material use and can increase stiffness; reducing it can save material and time but may reduce structural performance.
+These are the settings I can verify from the session and the supplied Bambu Studio evidence. Values that were not captured have been left explicitly unrecorded instead of being invented.
 
-For this prototype, **10% grid** provided a lightweight internal structure while keeping material consumption under control.
+| Setting | Final value used / observed |
+|---|---:|
+| Nozzle temperature | ≈240 °C |
+| Bed temperature | 55 °C |
+| Layer height | 0.20 mm |
+| Infill percentage | 15% |
+| Infill pattern | Gyroid |
+| Wall / shell count | 2 |
+| Print speed | Not recorded |
+| Supports | Tree supports |
+| Adhesion | Outer brim |
 
-## Material: PLA Basic
+The slicer screenshot shows **212 layers** and a Z height of **42.40 mm**, which is consistent with a 0.20 mm layer height for the configured job.
 
-The selected material was **PLA Basic**, a commonly used thermoplastic for prototyping because it is comparatively easy to print and provides good visual quality for general-purpose models.
+## 8. Print Time & Material Weight
 
-For this exercise, the material was less about pushing the printer to its temperature limits and more about learning how **geometry and slicer decisions translate into a usable object**.
+The final Bambu Studio slicing result provides the estimated material and time data:
 
-## The Slice
+| Measurement | Estimated value |
+|---|---:|
+| Model material | 30.81 g |
+| Support material | 5.12 g |
+| Total material | **35.93 g** |
+| Model print time | **2 h 3 min** |
+| Preparation time | **5 min 25 s** |
+| Total estimated time | **2 h 9 min** |
+| Actual material weight | Pending final printed-part measurement |
+| Actual print time | Pending final print record |
 
-After the model was scaled, oriented and supported, I sliced it in Bambu Studio.
+![[Bambu Studio Slicing Result.png]]
 
-The slicer estimated a print duration of approximately **2 hours**.
+*Caption: Bambu Studio slicing result showing 35.93 g total estimated filament usage and a 2 h 9 min total estimated print time.*
 
-That number represented a complete manufacturing prediction based on the model and the selected process settings. It was useful because it turned abstract design choices into measurable consequences: **how much material, how much time, and what kind of support structure?**
+The original intention was to keep the print comfortably under 50 g. The slicer forecast of **35.93 g** confirmed that the selected geometry and settings stayed within that material constraint.
 
-## What I Learned
+## 10. Final Result
 
-The biggest difference between 3D printing and laser cutting became clear in this exercise.
+The final printed Batman photograph has not yet been received, so I have deliberately not inserted a fabricated result image.
 
-With laser cutting, I was preparing a **2D path for material removal or surface marking**.
+> **FINAL RESULT PHOTOGRAPH — awaiting the physical print delivery.**
+>
+> The section is ready for the actual photograph, caption, and final comparison once the printed part is received.
 
-With 3D printing, I was preparing a **3D geometry for controlled material deposition**.
+## 11. Source Files
 
-The common thread was still the same:
+The final browser-friendly model used for the portfolio is available as:
 
-> **The digital file is only the starting point. Manufacturing begins when you account for what the machine can physically do.**
+**Buvanesh.glb** — interactive 3D inspection model.  [Download the GLB](./assets/weekly/Week_06/02_Tuesday/Buvanesh.glb)
 
-The wallet exercise made that idea practical. A 90% scale, horizontal orientation, tree supports, outer brim and 10% grid infill were not random slicer settings. Each one was a response to a constraint — **material usage, stability, geometry, or printability**.
+The original **STL** and final **G-code / printer file** were not present in the supplied project bundle for this update. They should be added before final faculty submission if they are available.
 
-## Fabrication Mindset
+The interactive model is embedded below so the digital geometry can still be inspected directly in the portfolio.
 
-This week connected two apparently different machines through one engineering principle:
+### Interactive 3D Model
 
-```text
-Design
-  ↓
-Understand the Process
-  ↓
-Prepare the Digital File
-  ↓
-Choose Parameters
-  ↓
-Fabricate
-  ↓
-Inspect the Result
-  ↓
-Iterate
-```
 
-The interesting part of digital fabrication is not pressing **Print** or **Start**. It is learning how to make the digital model think in the language of the machine.
+## Reflection
 
-### Reference
+The 3D-printing exercise made the difference between digital geometry and manufacturable geometry very clear. The slicer is effectively the translation layer between a model and the machine: orientation, support, infill, walls, temperature and adhesion all change what the printer can actually produce.
 
-Bambu Lab, *H2S — The Ultimate Single-Nozzle 3D Printer Now Bigger Than Ever* (official technical overview):
-https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/
+The strongest practical lesson was that speed is impressive, but **repeatable quality still depends on the constraints of the part**. I could see how the H2S moves extremely quickly, yet the machine also vibrates more noticeably when pushed hard. That balance between capability and process control is something I would pay more attention to in future prints.
+
+## References / Credits
+
+- Bambu Lab, *H2S — The Ultimate Single-Nozzle 3D Printer Now Bigger Than Ever* — official technical overview: https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/
+- Bambu Lab, H2S technical specifications / buying guide: https://bambulab.com/it/support/buying-guide
+- Bambu Lab H2S technical specifications: https://bambulab.cn/zh-cn/h2s/tech-specs
+- Bambu Studio — slicing and print preparation.
+- Batman 3D model — source model used for the physical printing exercise.
+- AI-assisted tools were used during parts of the design / preparation workflow where noted above.
